@@ -1,6 +1,9 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components"
+import reset from 'styled-reset'
 
 const GlobalStyle = createGlobalStyle`
+  ${reset}
+
   * {
     margin: 0;
     padding: 0;
@@ -36,7 +39,6 @@ const GlobalStyle = createGlobalStyle`
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     color: #3e3e3e;
-    padding-top: 100px;
   }
 
   a {
