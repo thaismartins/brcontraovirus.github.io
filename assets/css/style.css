@@ -147,6 +147,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
 
+a.destaque {
+  background-color: green;
+  color: white;
+}
+
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: #3498db;
   text-decoration: none;
