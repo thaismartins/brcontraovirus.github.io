@@ -1,99 +1,110 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  <a href="https://brcontraovirus.org/">
+    <img alt="Brasil contra o Vírus" src="https://brcontraovirus.org/assets/img/logo_2.png" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Brasil contra o Vírus
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+Rede colaborativa de combate ao COVID-19 no Brasil
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+## 🎓 Como instalar
 
-## 🚀 Quick start
+1.  **Instale as ferramentas na sua máquina**
 
-1.  **Create a Gatsby site.**
+    1. [NPM](https://www.npmjs.com/get-npm)
+    2. [YARN](https://yarnpkg.com/getting-started/install)
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
-
+2.  **Instale as dependências do projeto**
     ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+    yarn install
     ```
 
-1.  **Start developing.**
+## 🚀 Como começar
 
-    Navigate into your new site’s directory and start it up.
+1. **Para desenvolver:**
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+   ```shell
+   yarn start
+   ```
 
-1.  **Open the source code and start editing!**
+2. **Agora só abrir o código e começar a editar!**
 
-    Your site is now running at `http://localhost:8000`!
+   O projeto estará rodando em `http://localhost:3000`!
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+## 🧐 O que temos no projeto?
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-
-## 🧐 What's inside?
-
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+Um resumo da estrutura do projeto.
 
     .
+    ├── .cache
     ├── node_modules
+    ├── public
     ├── src
+    ├──── components
+    ├──── images
+    ├──── layouts
+    ├──── pages
+    ├──── templates
+    ├── .editorconfig
+    ├── .eslint
     ├── .gitignore
+    ├── .prettierignore
     ├── .prettierrc
-    ├── gatsby-browser.js
     ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
+    ├── jsconfig.js
     ├── LICENSE
-    ├── package-lock.json
     ├── package.json
-    └── README.md
+    ├── README.md
+    └── yarn.lock
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+1.  **`/.cache`**: Diretório com arquivos de cache utilizados apenas durante o desenvolvimento. _Essa pasta deve permanecer no .gitignore_
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+2.  **`/node_modules`**: Diretório com todas as dependências do projeto que são instaladas durante `yarn install`. _Essa pasta deve permanecer no .gitignore_
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+3.  **`/public`**: Diretório gerado durante 2 processos com finalidades diferentes (_Essa pasta deve permanecer no .gitignore_):
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+    1.  `develop`: arquivos temporários
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+    2.  `build`: arquivos estáticos gerados que serão utilizados no ambiente de produção.
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+4)  **`/src`**: Nessa pastas temos todos os arquivos e códigos que são usados para desenvolvimento do site e onde faremos todas as alterações.
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+    1.  **`/src/components`**
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+    2.  **`/src/images`**
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+    3.  **`/src/layouts`**
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+    4.  **`/src/pages`**
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+    5.  **`/src/templates`**
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+5)  **`.gitignore`**: Arquivo que contém a lista de todos os arquivos que não devem ser enviados ao git durante o versionamento.
 
-## 🎓 Learning Gatsby
+6)  **`.prettierrc`**: Arquivo de configuração do [Prettier](https://prettier.io/), ferramenta usada para manter a consistência da formatação do projeto.
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+7)  **`gatsby-config.js`**: Arquivo com todas as configurações usadas pelo [GatsbyJs](https://www.gatsbyjs.org/), ferramenta utilizada para gerar arquivos estáticos, gerenciar imagens . É neste arquivo que colocamos configurações dos plugins utilizados e etc. (Veja a [documentação das configurações](https://www.gatsbyjs.org/docs/gatsby-config/) para mais informações).
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+8)  **`package.lock`** Este arquivo é gerado automaticamente baseado nas versões das dependências do `package.json`. **(Você deve alterar esse arquivo).**
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+9)  **`package.json`**: Arquivo utilizado em projetos Node.js, onde armazenamos informações do projeto, as dependências a serem instaladas para o ambiente de produção e desenvolvimento, os scripts a serem rodados e etc.
+
+10) **`README.md`**: Arquivo contendo algumas informações sobre o projeto.
 
 ## 💫 Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+O processo de deploy pode ser feito de duas maneiras:
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
+1. **Deploy automatizado** utilizando os plugins do GatsbyJs. Consulte a [documentação](https://www.gatsbyjs.org/docs/deploying-and-hosting/).
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+2. **Deploy manual** seguindo os passos:
+
+   1. Rodar:
+
+   ```SHELL
+   yarn build
+   ```
+
+   2. Copiar a pasta `public` gerada para o servidor
