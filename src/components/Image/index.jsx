@@ -26,7 +26,7 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-const Image = ({ src, alt }) => (
+const Image = ({ src, alt, fit }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -36,7 +36,7 @@ const Image = ({ src, alt }) => (
               relativePath
               name
               childImageSharp {
-                fluid(maxWidth: 600) {
+                fluid(maxWidth: 1400) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -54,6 +54,12 @@ const Image = ({ src, alt }) => (
 
       if (!image) return null
 
+      const style = {
+        objectFit: fit,
+        width: '100%',
+        height: '100%',
+      }
+
       const { childImageSharp, extension, publicURL } = image.node
 
       // svg support
@@ -61,7 +67,7 @@ const Image = ({ src, alt }) => (
         return <img src={publicURL} alt={alt} />
       }
 
-      return <Img alt={alt} fluid={childImageSharp.fluid} />
+      return <Img alt={alt} fluid={childImageSharp.fluid} imgStyle={style} />
     }}
   />
 )
@@ -69,6 +75,11 @@ const Image = ({ src, alt }) => (
 Image.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
+  fit: PropTypes.oneOf(['contain', 'cover']),
+}
+
+Image.defaultProps = {
+  fit: 'contain',
 }
 
 export default Image
