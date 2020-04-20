@@ -1,4 +1,3 @@
-// import React, { useEffect } from 'react'
 import React from 'react'
 
 import Content from '@components/Content'

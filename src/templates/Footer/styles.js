@@ -3,9 +3,9 @@ import styled from 'styled-components'
 const Container = styled.header`
   width: 100%;
   margin-top: 1.45rem;
-  padding: 15px 0;
+  padding: 2rem 0;
   background-color: ${({ theme }) => theme.colors.white};
-  border-top: 4px solid ${({ theme }) => theme.colors.primary};
+  border-top: 1px solid ${({ theme }) => theme.colors.dark};
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
