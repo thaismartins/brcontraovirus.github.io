@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2020",
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@layouts": ["./src/layouts"],
+      "@pages": ["./src/pages"],
+      "@templates": ["./src/templates"],
+      "@components": ["./src/components"]
+    }
+  },
+  "include": ["./src/**/*"]
+}
