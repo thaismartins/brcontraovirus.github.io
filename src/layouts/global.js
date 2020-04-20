@@ -39,7 +39,6 @@ const GlobalStyle = createGlobalStyle`
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     color: ${({ theme }) => theme.colors.dark};
-    padding-top: 80px;
   }
 
   a {
@@ -59,6 +58,10 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     line-height: normal;
     letter-spacing: normal;
+  }
+
+  main {
+    margin-top: 70px;
   }
 `
 
