@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import Content from '@components/Content'
+import Center from '@components/Center'
 import Image from '@components/Image'
 import MenuHamburger from '@components/MenuHamburger'
 import Menu from '@components/Menu'
@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <Container open={open}>
-      <Content>
+      <Center>
         <Logo>
           <Image src='logo.png' alt='Brasil contra o Vírus' />
         </Logo>
@@ -20,7 +20,7 @@ const Header = () => {
         <MenuHamburger toogleOpen={setOpen} open={open} />
 
         <Menu open={open} />
-      </Content>
+      </Center>
     </Container>
   )
 }

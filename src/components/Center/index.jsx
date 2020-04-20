@@ -3,17 +3,17 @@ import PropTypes from 'prop-types'
 
 import { Container } from './styles'
 
-const Content = ({ children, className }) => (
+const Center = ({ children, className }) => (
   <Container className={className}>{children}</Container>
 )
 
-Content.propTypes = {
+Center.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
 }
 
-Content.defaultProps = {
+Center.defaultProps = {
   className: '',
 }
 
-export default Content
+export default Center

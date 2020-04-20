@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Content from '@components/Content'
+import Center from '@components/Center'
 import Image from '@components/Image'
 
 import { Container, Logo } from './styles'
@@ -8,11 +8,11 @@ import { Container, Logo } from './styles'
 const Header = () => {
   return (
     <Container>
-      <Content>
+      <Center>
         <Logo>
           <Image src='logo.png' alt='Brasil contra o Vírus' />
         </Logo>
-      </Content>
+      </Center>
     </Container>
   )
 }

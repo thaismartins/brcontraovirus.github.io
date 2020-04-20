@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Content from '@components/Content'
+import Center from '@components/Center'
 import Background from '@components/Background'
 import Button from '@components/Button'
 
@@ -10,7 +10,7 @@ const BannerHome = () => {
   return (
     <Container>
       <Background image='banner.jpg' alt='Brasil contra o Vírus' full>
-        <Content>
+        <Center>
           <h1>Brasil contra o Virus</h1>
           <h2>Rede colaborativa de combate ao COVID-19 no Brasil</h2>
           <Button color='white-green' rounded to='/'>
@@ -19,7 +19,7 @@ const BannerHome = () => {
           <Button color='white-green' rounded to='/'>
             Vaquinha
           </Button>
-        </Content>
+        </Center>
       </Background>
     </Container>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Content from '@components/Content'
+import Center from '@components/Center'
 import Image from '@components/Image'
 
 import { Container, Title, Description, ImageWrapper } from './styles'
@@ -8,7 +8,7 @@ import { Container, Title, Description, ImageWrapper } from './styles'
 const Error = () => {
   return (
     <Container>
-      <Content>
+      <Center>
         <ImageWrapper>
           <Image src='404.svg' alt='Página não encontrada' />
         </ImageWrapper>
@@ -20,7 +20,7 @@ const Error = () => {
             &#128528;
           </span>
         </Description>
-      </Content>
+      </Center>
     </Container>
   )
 }
