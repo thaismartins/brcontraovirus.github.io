@@ -10,6 +10,7 @@ const Container = styled.div`
   justify-content: inherit;
   align-items: inherit;
   flex-wrap: inherit;
+  flex-direction: inherit;
 
   @media ${media.max.large} {
     padding-left: 1.25rem;
