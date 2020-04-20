@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from 'styled-components'
 import reset from 'styled-reset'
 
 const GlobalStyle = createGlobalStyle`
@@ -38,7 +38,8 @@ const GlobalStyle = createGlobalStyle`
     background: #fff;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    color: #3e3e3e;
+    color: ${({ theme }) => theme.colors.dark};
+    padding-top: 80px;
   }
 
   a {
@@ -59,6 +60,6 @@ const GlobalStyle = createGlobalStyle`
     line-height: normal;
     letter-spacing: normal;
   }
-`;
+`
 
-export default GlobalStyle;
+export default GlobalStyle
