@@ -8,7 +8,7 @@ const Container = styled.header`
   margin-bottom: 1.45rem;
   padding: 0.5rem 0;
   background-color: ${({ theme }) => theme.colors.white};
-  border-bottom: 4px solid ${({ theme }) => theme.colors.primary};
+  border-bottom: 4px solid ${({ theme }) => theme.colors.green};
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
