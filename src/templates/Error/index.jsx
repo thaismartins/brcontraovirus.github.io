@@ -15,7 +15,10 @@ const Error = () => {
 
         <Title>Oops...</Title>
         <Description>
-          Não conseguimos encontrar esta página &#128528;
+          Não conseguimos encontrar esta página
+          <span role='img' aria-label='triste'>
+            &#128528;
+          </span>
         </Description>
       </Content>
     </Container>
