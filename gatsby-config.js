@@ -34,15 +34,14 @@ module.exports = {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
-          "@layouts": path.resolve(__dirname, "src/layouts"),
-          "@pages": path.resolve(__dirname, "src/pages"),
-          "@templates": path.resolve(__dirname, "src/templates"),
-          "@components": path.resolve(__dirname, "src/components"),
+          '@pages': path.resolve(__dirname, 'src/pages'),
+          '@layouts': path.resolve(__dirname, 'src/layouts'),
+          '@templates': path.resolve(__dirname, 'src/templates'),
+          '@services': path.resolve(__dirname, 'src/services'),
+          '@components': path.resolve(__dirname, 'src/components'),
         },
-        extensions: [
-          "js",
-        ]
-      }
+        extensions: ['.js', '.jsx'],
+      },
     },
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
@@ -50,11 +49,11 @@ module.exports = {
         fonts: [
           {
             family: `Open Sans`,
-            variants: [`400`, `800`]
+            variants: [`400`, `800`],
           },
         ],
-        display: 'swap'
-      }
+        display: 'swap',
+      },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
