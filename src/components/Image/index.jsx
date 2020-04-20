@@ -40,6 +40,8 @@ const Image = ({ src, alt }) => (
                   ...GatsbyImageSharpFluid
                 }
               }
+              extension
+              publicURL
             }
           }
         }
@@ -52,7 +54,14 @@ const Image = ({ src, alt }) => (
 
       if (!image) return null
 
-      return <Img alt={alt} fluid={image.node.childImageSharp.fluid} />
+      const { childImageSharp, extension, publicURL } = image.node
+
+      // svg support
+      if (!childImageSharp && extension === 'svg') {
+        return <img src={publicURL} alt={alt} />
+      }
+
+      return <Img alt={alt} fluid={childImageSharp.fluid} />
     }}
   />
 )
