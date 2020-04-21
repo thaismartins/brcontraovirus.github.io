@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 
 import { Container } from './styles'
 
-const Button = ({ link, to, color, rounded, children }) => (
-  <Container link={link} color={color} rounded={rounded}>
+const Button = ({ link, to, color, rounded, uppercase, children }) => (
+  <Container link={link} color={color} rounded={rounded} uppercase={uppercase}>
     <Link to={to}>{children}</Link>
   </Container>
 )
@@ -15,12 +15,14 @@ Button.propTypes = {
   to: PropTypes.string.isRequired,
   link: PropTypes.bool,
   rounded: PropTypes.bool,
+  uppercase: PropTypes.bool,
   color: PropTypes.string,
 }
 
 Button.defaultProps = {
   link: false,
   rounded: false,
+  uppercase: false,
   color: '',
 }
 
