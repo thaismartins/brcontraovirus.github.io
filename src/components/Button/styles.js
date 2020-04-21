@@ -1,10 +1,23 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   ${({ rounded }) =>
     rounded &&
     `
     border-radius: 2rem;
+  `};
+
+  ${({ circle }) =>
+    circle &&
+    `
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
   `};
 
   ${({ theme, color }) =>
@@ -16,13 +29,19 @@ const Container = styled.div`
   a {
     color: ${({ theme }) => theme.colors.green};
     transition: ${({ theme }) => theme.transition};
-    width: fit-content;
-    max-width: 100%;
-    padding: 0.75rem 2.5rem;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-transform: ${({ uppercase }) => (uppercase ? 'uppercase' : 'inherit')};
+
+    ${({ circle }) =>
+      !circle &&
+      `
+      width: fit-content;
+      max-width: 100%;
+      padding: 0.75rem 2.5rem;
+    `};
 
     ${({ theme, color }) =>
       color &&
@@ -36,6 +55,12 @@ const Container = styled.div`
       -webkit-text-fill-color: transparent; 
       -moz-text-fill-color: transparent;
     `};
+
+    img {
+      width: 50%;
+      height: 50%;
+      object-fit: contain;
+    }
 
     &:hover {
       opacity: 0.9;
