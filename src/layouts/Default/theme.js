@@ -6,12 +6,12 @@ const theme = {
     blue: '#20c6e3',
     yellow: '#dbcd35',
     orange: '#ee9b37',
-    purple: '#2369dc',
-    pink: '#8f7cfb',
+    purple: '#133c82',
+    pink: '#5a4896',
     gradients: {
       green: `linear-gradient(20deg, #47bb8e, #20c6e3)`,
       yellow: `linear-gradient(20deg, #dbcd35, #ee9b37)`,
-      purple: `linear-gradient(20deg, #2369dc, #8f7cfb)`,
+      purple: `linear-gradient(20deg, #133c82, #5a4896)`,
     },
   },
   buttons: {
@@ -28,7 +28,7 @@ const theme = {
       color: '#fff',
     },
     purple: {
-      background: `linear-gradient(20deg, #2369dc, #8f7cfb)`,
+      background: `linear-gradient(20deg, #133c82, #133c82)`,
       color: '#fff',
     },
   },
