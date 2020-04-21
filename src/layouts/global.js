@@ -63,6 +63,14 @@ const GlobalStyle = createGlobalStyle`
   main {
     margin-top: 70px;
   }
+
+  b, strong, em {
+    font-weight: 800;
+  }
+
+  i {
+    font-style: italic;
+  }
 `
 
 export default GlobalStyle
