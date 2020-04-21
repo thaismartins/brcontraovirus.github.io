@@ -13,7 +13,7 @@ const Container = styled.header`
 
 const Logo = styled.div`
   width: 50%;
-  max-width: 150px;
+  max-width: 9.375rem;
 `
 
 export { Container, Logo }

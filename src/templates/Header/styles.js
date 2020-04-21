@@ -19,7 +19,7 @@ const Container = styled.header`
 `
 
 const Logo = styled.div`
-  width: 140px;
+  width: 8.75rem;
   max-width: 50%;
 `
 
