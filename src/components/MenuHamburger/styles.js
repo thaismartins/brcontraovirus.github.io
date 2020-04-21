@@ -18,7 +18,7 @@ const Container = styled.div`
 
   div {
     width: 1.5rem;
-    height: 0.25rem;
+    height: 0.1rem;
     background: ${({ theme }) => theme.colors.dark};
     border-radius: 10px;
     transition: ${({ theme }) => theme.transition};
