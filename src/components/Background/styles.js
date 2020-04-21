@@ -4,8 +4,10 @@ const Container = styled.div`
   width: 100%;
   background: ${({ theme, color }) =>
     color ? theme.colors.gradients[color] : ''};
+  overflow: hidden;
+  position: relative;
 
-  ${({ full }) => (full ? 'height: calc(100vh - 70px);' : '')};
+  ${({ full }) => (full ? 'height: 80vh;' : '')};
 `
 
 const ImageWrapper = styled.div`
