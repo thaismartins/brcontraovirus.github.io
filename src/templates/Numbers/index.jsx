@@ -3,33 +3,14 @@ import React from 'react'
 import Center from '@components/Center'
 import PageTitle from '@components/PageTitle'
 import IconText from '@components/IconText'
+import ProgressBar from '@components/ProgressBar'
 
-import { Container, Title, NumbersLists } from './styles'
+import numbers from './numbers'
+import hospitals from './hospitals'
+
+import { Container, Title, NumbersLists, Hospitals, Hospital } from './styles'
 
 const Numbers = () => {
-  const numbers = [
-    {
-      title: '1900',
-      description: 'Profissionais da Saúde',
-      icon: 'health.svg',
-    },
-    {
-      title: '1600',
-      description: 'Voluntários Cadastrados',
-      icon: 'health.svg',
-    },
-    {
-      title: '700',
-      description: 'Impressoras 3D',
-      icon: 'health.svg',
-    },
-    {
-      title: '970',
-      description: 'Doações',
-      icon: 'health.svg',
-    },
-  ]
-
   return (
     <Container>
       <Center>
@@ -52,6 +33,18 @@ const Numbers = () => {
         <PageTitle color='green' border>
           Doações
         </PageTitle>
+
+        <Hospitals>
+          {hospitals.map((hospital, index) => (
+            <Hospital key={index}>
+              <ProgressBar
+                title={hospital.title}
+                total={hospital.total}
+                units={hospital.units}
+              />
+            </Hospital>
+          ))}
+        </Hospitals>
       </Center>
     </Container>
   )

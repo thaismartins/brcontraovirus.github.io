@@ -19,4 +19,14 @@ const NumbersLists = styled.div`
   display: flex;
 `
 
-export { Container, Title, NumbersLists }
+const Hospitals = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+`
+
+const Hospital = styled.div`
+  flex: 0 1 calc(50% - 1rem);
+`
+
+export { Container, Title, NumbersLists, Hospitals, Hospital }
