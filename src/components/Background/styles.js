@@ -6,8 +6,9 @@ const Container = styled.div`
     color ? theme.colors.gradients[color] : ''};
   overflow: hidden;
   position: relative;
+  padding: 4rem 0;
 
-  ${({ full }) => (full ? 'height: 80vh;' : '')};
+  ${({ full }) => (full ? 'min-height: 80vh;' : '')};
 `
 
 const ImageWrapper = styled.div`
