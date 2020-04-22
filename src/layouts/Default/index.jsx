@@ -6,7 +6,7 @@ import GlobalStyle from '@layouts/global'
 import Header from '@templates/Header'
 import Footer from '@templates/Footer'
 
-import theme from './theme'
+import theme from '@layouts/theme'
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
