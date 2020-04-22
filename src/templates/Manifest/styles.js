@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const Container = styled.header`
   width: 100%;
-  padding: 2rem 0;
+  margin: 2rem 0;
   color: ${({ theme }) => theme.colors.white};
 `
 
@@ -13,7 +13,7 @@ const Title = styled.h2`
   font-weight: 800;
   color: ${({ theme }) => theme.colors.white};
   padding-bottom: 1rem;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
   border-bottom: 0.25rem solid ${({ theme }) => theme.colors.white};
 `
 
