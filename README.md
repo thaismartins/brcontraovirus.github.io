@@ -16,6 +16,18 @@ Rede colaborativa de combate ao COVID-19 no Brasil
     1. [NPM](https://www.npmjs.com/get-npm)
     2. [YARN](https://yarnpkg.com/getting-started/install)
 
+
+*** :beetle: Deu erro, jão?
+  yarn install v1.22.4
+  [1/4] Resolving packages...
+  [2/4] Fetching packages...
+  error @typescript-eslint/eslint-plugin@2.28.0: The engine "node" is incompatible with this module. Expected version "^8.10.0 || ^10.13.0 || >=11.10.1". Got "11.2.0"
+  error Found incompatible module.
+
+**** a) Atualize o node-js.
+**** b) Usa Ubuntu LTS e/ou está com preguiça?
+  yarn install --ignore-engines
+
 2.  **Instale as dependências do projeto**
     ```shell
     yarn install
