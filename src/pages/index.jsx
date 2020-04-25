@@ -9,6 +9,7 @@ import Numbers from '@templates/Numbers'
 import Manifest from '@templates/Manifest'
 import Projects from '@templates/Projects'
 import MakerCycle from '@templates/MakerCycle'
+import Press from '@templates/Press'
 
 const IndexPage = () => (
   <Layout>
@@ -18,6 +19,7 @@ const IndexPage = () => (
     <Manifest />
     <Projects />
     <MakerCycle />
+    <Press />
   </Layout>
 )
 
