@@ -49,7 +49,7 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Open Sans`,
+            family: `Nunito`,
             variants: [`400`, `800`],
           },
         ],
