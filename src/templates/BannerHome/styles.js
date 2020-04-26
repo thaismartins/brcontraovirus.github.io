@@ -1,8 +1,10 @@
 import styled from 'styled-components'
+import media from '@layouts/media'
 
 const Container = styled.div`
   width: 100%;
   height: 100%;
+  display: flex;
 `
 
 const Content = styled.div`
@@ -20,6 +22,10 @@ const Title = styled.h1`
   font-weight: 800;
   color: ${({ theme }) => theme.colors.white};
   text-shadow: 0.25rem 0.25rem 0 ${({ theme }) => theme.colors.dark};
+
+  @media ${media.max.medium} {
+    font-size: 3rem;
+  }
 `
 
 const Subtitle = styled.h2`
@@ -28,6 +34,10 @@ const Subtitle = styled.h2`
   margin-bottom: 2rem;
   color: ${({ theme }) => theme.colors.white};
   text-shadow: 0.25rem 0.25rem 0 ${({ theme }) => theme.colors.dark};
+
+  @media ${media.max.medium} {
+    font-size: 1.5rem;
+  }
 `
 
 const Buttons = styled.div`
@@ -36,6 +46,10 @@ const Buttons = styled.div`
   justify-content: space-between;
   width: 100%;
   max-width: 24rem;
+
+  @media ${media.max.medium} {
+    flex-direction: column;
+  }
 `
 
 export { Container, Content, Title, Subtitle, Buttons }
