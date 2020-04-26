@@ -15,6 +15,9 @@ import {
   Items,
   Equipaments,
   Equipament,
+  EquipamentIcon,
+  EquipamentTitle,
+  EquipamentText,
 } from './styles'
 
 const items = [
@@ -52,23 +55,30 @@ const MakerCycle = () => {
               <Items>
                 <ListItems items={items} />
               </Items>
-
-              <Equipaments>
-                <Equipament
-                  title='Suportes ventilatórios'
-                  description='O exemplo de outros países demonstra o alto risco de sobrecarga dos hospitais.'
-                  icon='health.svg'
-                  color='white'
-                  type='vertical'
-                />
-                <Equipament
-                  title='EPIs'
-                  description='Garantir a segurança e presença dos profissionais de saúde é fundamental nesse momento.'
-                  icon='health.svg'
-                  color='white'
-                />
-              </Equipaments>
             </TextWrapper>
+
+            <Equipaments>
+              <Equipament>
+                <EquipamentIcon>
+                  <Image src='icons/bed.png' alt='Ícone' />
+                </EquipamentIcon>
+                <EquipamentTitle>Suportes ventilatórios</EquipamentTitle>
+                <EquipamentText>
+                  O exemplo de outros países demonstra o alto risco de
+                  sobrecarga dos hospitais.
+                </EquipamentText>
+              </Equipament>
+              <Equipament>
+                <EquipamentIcon>
+                  <Image src='icons/specialist.png' alt='Ícone' />
+                </EquipamentIcon>
+                <EquipamentTitle>EPIs</EquipamentTitle>
+                <EquipamentText>
+                  Garantir a segurança e presença dos profissionais de saúde é
+                  fundamental nesse momento.
+                </EquipamentText>
+              </Equipament>
+            </Equipaments>
           </Content>
         </Center>
       </Background>

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import IconText from '@components/IconText'
+import media from '@layouts/media'
 
-const Container = styled.header`
+const Container = styled.div`
   width: 100%;
   margin: 2rem 0;
   color: ${({ theme }) => theme.colors.white};
@@ -16,16 +16,30 @@ const Title = styled.h2`
   padding-bottom: 1rem;
   margin-bottom: 4rem;
   border-bottom: 0.25rem solid ${({ theme }) => theme.colors.white};
+
+  @media ${media.max.medium} {
+    font-size: 2.5rem;
+  }
 `
 
 const Content = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media ${media.max.medium} {
+    flex-direction: column;
+  }
 `
 
 const ImageWrapper = styled.div`
   flex-basis: 45%;
+
+  @media ${media.max.medium} {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
 `
 
 const TextWrapper = styled.div`
@@ -41,9 +55,83 @@ const Items = styled.ul`
   margin-top: 2rem;
 `
 
-const Equipaments = styled.div``
+const Equipaments = styled.div`
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-const Equipament = styled(IconText)``
+  @media ${media.max.medium} {
+    flex-direction: column;
+  }
+`
+
+const Equipament = styled.div`
+  flex-basis: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  min-height: 10rem;
+  padding-left: 4rem;
+  margin-top: 4rem;
+
+  @media ${media.max.medium} {
+    padding-left: 0;
+  }
+`
+
+const EquipamentIcon = styled.div`
+  width: 8rem;
+  height: 8rem;
+  background-color: ${({ theme }) => theme.colors.white};
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+  @media ${media.max.medium} {
+    position: relative;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gatsby-image-wrapper {
+    width: 70%;
+    height: 70%;
+  }
+`
+
+const EquipamentTitle = styled.div`
+  font-size: 2rem;
+  font-weight: 800;
+  padding-left: 6rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.25rem solid ${({ theme }) => theme.colors.white};
+  width: 100%;
+
+  @media ${media.max.medium} {
+    padding-left: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+`
+
+const EquipamentText = styled.div`
+  padding-left: 6rem;
+  width: 100%;
+
+  @media ${media.max.medium} {
+    padding-left: 0;
+  }
+`
 
 export {
   Container,
@@ -55,4 +143,7 @@ export {
   Items,
   Equipaments,
   Equipament,
+  EquipamentIcon,
+  EquipamentTitle,
+  EquipamentText,
 }
