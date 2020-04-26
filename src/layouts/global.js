@@ -29,7 +29,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
     font-style: normal;
     font-stretch: normal;
     font-weight: 400;
