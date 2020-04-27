@@ -61,8 +61,8 @@ const Container = styled.div`
       }
 
       button {
-        width: 0.5rem;
-        height: 0.5rem;
+        width: 0.65rem;
+        height: 0.65rem;
         padding: 1px;
         font-size: 0;
         position: relative;
@@ -72,8 +72,8 @@ const Container = styled.div`
 
         &::before {
           line-height: 0.75rem;
-          width: 0.5rem;
-          height: 0.5rem;
+          width: 0.65rem;
+          height: 0.65rem;
           background-color: ${({ theme }) => theme.colors.gray};
           opacity: 1;
           position: absolute;
