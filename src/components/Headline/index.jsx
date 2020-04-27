@@ -1,28 +1,37 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import Image from '@components/Image'
+import Button from '@components/Button'
 
-import {ImageWrapper, Card, Logo, HeadlineBox, HeadlineWrapper, ButtonWrapper, Button } from './styles'
+import { Container, Logo, Text } from './styles'
 
-const Headline = ({ text, buttonText, linkTo, image, alt }) => {
-    return (
-        <Card>
-            <Logo>
-                <ImageWrapper>
-                    <Image src={image} alt={alt} fit='cover'/>
-                </ImageWrapper>
-            </Logo>
-            
-            <HeadlineBox>
-                <HeadlineWrapper>
-                    <p>{text}</p>
-                </HeadlineWrapper>
-            </HeadlineBox>
+const Headline = ({ title, text, link, image, color }) => {
+  return (
+    <Container color={color}>
+      <Logo color={color}>
+        <Image src={image} alt={title} />
+      </Logo>
 
-            <ButtonWrapper>
-                <Button href={linkTo}>{buttonText}</Button>
-            </ButtonWrapper>
-        </Card>
-    )
+      <Text>{text}</Text>
+
+      <Button to={link} color={color} rounded uppercase center>
+        Saiba Mais
+      </Button>
+    </Container>
+  )
+}
+
+Headline.propTypes = {
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  color: PropTypes.string,
+}
+
+Headline.defaultProps = {
+  color: 'green',
 }
 
 export default Headline
