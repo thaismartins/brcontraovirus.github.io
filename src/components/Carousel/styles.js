@@ -9,7 +9,7 @@ const Container = styled.div`
   ${({ arrows }) =>
     arrows &&
     `
-    padding: 0 6rem;
+    padding: 2rem 8rem;
   `}
 
   .slick-track {
@@ -46,11 +46,11 @@ const Container = styled.div`
     z-index: 3;
 
     li {
-      width: 8px;
-      height: 8px;
-      margin-top: 13px;
+      width: 0.5rem;
+      height: 0.5rem;
       display: inline-block;
-      margin: 4px;
+      margin: 0.55rem;
+      cursor: pointer;
 
       &.slick-active {
         button {
@@ -61,8 +61,8 @@ const Container = styled.div`
       }
 
       button {
-        width: 8px;
-        height: 8px;
+        width: 0.5rem;
+        height: 0.5rem;
         padding: 1px;
         font-size: 0;
         position: relative;
@@ -71,10 +71,10 @@ const Container = styled.div`
         overflow: hidden;
 
         &::before {
-          line-height: 10px;
-          width: 8px;
-          height: 8px;
-          background-color: #dddddd;
+          line-height: 0.75rem;
+          width: 0.5rem;
+          height: 0.5rem;
+          background-color: ${({ theme }) => theme.colors.gray};
           opacity: 1;
           position: absolute;
           top: 0;
