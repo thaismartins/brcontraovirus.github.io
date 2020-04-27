@@ -31,6 +31,11 @@ const Container = styled.div`
     align-items: stretch;
     position: relative;
 
+    > div {
+      width: 100%;
+      padding: 1rem;
+    }
+
     &.slick-active {
       z-index: 2;
     }

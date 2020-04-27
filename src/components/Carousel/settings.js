@@ -7,7 +7,6 @@ const settings = {
   slidesToScroll: 1,
   initialSlide: 1,
   lazyLoad: true,
-  centerMode: true,
   responsive: [
     {
       breakpoint: 768,
