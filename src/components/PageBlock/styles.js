@@ -4,7 +4,7 @@ import media from '@layouts/media'
 const Content = styled.div`
   width: 100%;
   position: relative;
-  min-height: 60vh;
+  min-height: 80vh;
   overflow: hidden;
   padding-top: 3rem;
   top: -2rem;
