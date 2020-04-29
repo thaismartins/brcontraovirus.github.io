@@ -35,6 +35,7 @@ const Content = styled.div`
     height: 200%;
     position: absolute;
     top: -100%;
+    z-index: -1;
 
     ${({ theme, color }) =>
       color &&
