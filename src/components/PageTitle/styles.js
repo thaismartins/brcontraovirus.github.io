@@ -24,7 +24,7 @@ const Container = styled.div`
     ${({ theme, color }) =>
       color &&
       `
-      background: ${theme.buttons[color].background};
+      background: ${theme.colors.gradients[color]};
     `};
   }
 `
