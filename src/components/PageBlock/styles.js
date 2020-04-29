@@ -7,7 +7,27 @@ const Content = styled.div`
   min-height: 80vh;
   overflow: hidden;
   padding-top: 3rem;
-  top: -2rem;
+  top: -2.1rem;
+
+  &:after {
+    content: '';
+    width: 90%;
+    max-width: 60rem;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 0;
+    display: ${({ border }) => (border ? 'block' : 'none')};
+
+    ${({ theme, color }) =>
+      color &&
+      `
+      background: ${theme.colors.gradients[color]};
+    `};
+  }
 
   &:before {
     content: '';
