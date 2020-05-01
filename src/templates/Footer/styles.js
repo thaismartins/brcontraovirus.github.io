@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import media from '@layouts/media'
 
-import WhatsappIcon from '@images/whatsapp.svg'
+import WhatsappIcon from '@images/icons/whatsapp.svg'
 
 const Container = styled.header`
   width: 100%;
