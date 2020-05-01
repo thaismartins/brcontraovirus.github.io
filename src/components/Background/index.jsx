@@ -6,7 +6,7 @@ import Image from '@components/Image'
 import { Container, ImageWrapper, ContentWrapper } from './styles'
 
 const Background = ({ children, image, alt, color, full }) => (
-  <Container full={full} color={color}>
+  <Container full={full} color={color} hasImage={image}>
     {image && (
       <ImageWrapper>
         <Image src={image} alt={alt} fit='cover' />
