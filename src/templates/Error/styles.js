@@ -9,7 +9,7 @@ const Container = styled.div`
 `
 
 const Title = styled.h1`
-  font-weight: 800;
+  font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
 `
