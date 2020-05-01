@@ -1,23 +1,23 @@
 const numbers = [
   {
-    title: '1900',
+    number: 1900,
     description: 'Profissionais da Saúde',
-    icon: 'health.svg',
+    icon: 'bag.png',
   },
   {
-    title: '1600',
+    number: 1600,
     description: 'Voluntários Cadastrados',
-    icon: 'health.svg',
+    icon: 'bag.png',
   },
   {
-    title: '700',
+    number: 700,
     description: 'Impressoras 3D',
-    icon: 'health.svg',
+    icon: 'printer.png',
   },
   {
-    title: '970',
+    number: 1352,
     description: 'Doações',
-    icon: 'health.svg',
+    icon: 'heart.png',
   },
 ]
 
