@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-import TwitterIcon from '@images/twitter.svg'
-import FacebookIcon from '@images/facebook.svg'
-import InstagramIcon from '@images/instagram.svg'
+import TwitterIcon from '@images/icons/twitter.svg'
+import FacebookIcon from '@images/icons/facebook.svg'
+import InstagramIcon from '@images/icons/instagram.svg'
 
 const icons = {
   instagram: InstagramIcon,
