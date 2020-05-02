@@ -4,10 +4,10 @@ const projects = [
     category: 'EPI',
     categoryType: 'epis',
     images: [
-      'faceshield.jpg',
-      'faceshield.jpg',
-      'faceshield.jpg',
-      'faceshield.jpg',
+      'faceshield/faceshield.jpg',
+      'faceshield/faceshield.jpg',
+      'faceshield/faceshield.jpg',
+      'faceshield/faceshield.jpg',
     ],
   },
   {
@@ -15,10 +15,10 @@ const projects = [
     category: 'EPI',
     categoryType: 'epis',
     images: [
-      'faceshield.jpg',
-      'faceshield.jpg',
-      'faceshield.jpg',
-      'faceshield.jpg',
+      'faceshield/faceshield.jpg',
+      'faceshield/faceshield.jpg',
+      'faceshield/faceshield.jpg',
+      'faceshield/faceshield.jpg',
     ],
   },
   {
@@ -26,10 +26,10 @@ const projects = [
     category: 'Manutenção',
     categoryType: 'manutencao',
     images: [
-      'faceshield.jpg',
-      'faceshield.jpg',
-      'faceshield.jpg',
-      'faceshield.jpg',
+      'faceshield/faceshield.jpg',
+      'faceshield/faceshield.jpg',
+      'faceshield/faceshield.jpg',
+      'faceshield/faceshield.jpg',
     ],
   },
   {
@@ -37,10 +37,10 @@ const projects = [
     category: 'Dispositivos',
     categoryType: 'dispositivos',
     images: [
-      'faceshield.jpg',
-      'faceshield.jpg',
-      'faceshield.jpg',
-      'faceshield.jpg',
+      'faceshield/faceshield.jpg',
+      'faceshield/faceshield.jpg',
+      'faceshield/faceshield.jpg',
+      'faceshield/faceshield.jpg',
     ],
   },
 ]

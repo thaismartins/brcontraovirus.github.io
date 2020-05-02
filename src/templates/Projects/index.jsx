@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 
 import Center from '@components/Center'
-import Project from '@components/Project'
-import PageTitle from '@components/PageTitle'
 
 import categories from './categories'
 import projects from './projects'
@@ -12,8 +10,11 @@ import {
   Title,
   Text,
   Projects,
+  Project,
   Categories,
   Category,
+  Buttons,
+  Button,
 } from './styles'
 
 const Projetcs = () => {
@@ -50,18 +51,19 @@ const Projetcs = () => {
           {projects.map((project, index) => (
             <Project
               key={index}
-              show={
-                activeCategory === project.categoryType || activeCategory === ''
-              }
+              show={activeCategory === project.categoryType || !activeCategory}
               image={project.images[0]}
               title={project.title}
               category={project.category}
             />
           ))}
         </Projects>
-        <PageTitle color='orange' border>
-          Compartilhe seu Projeto
-        </PageTitle>
+
+        <Buttons>
+          <Button to='/' color='orange' uppercase rounded>
+            Compartilhe seu Projeto
+          </Button>
+        </Buttons>
       </Center>
     </Container>
   )
