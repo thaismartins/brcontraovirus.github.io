@@ -1,31 +1,37 @@
 import React from 'react'
 
+import Background from '@components/Background'
 import Center from '@components/Center'
-import IconText from '@components/IconText'
-import Background from "@components/Background";
+import Testimony from '@components/Testimony'
 
 import testimonials from './testimonials'
 
-import { Container, Title, Text, TestimonialsLists } from './styles'
+import { Container, Title, Text, TestimonialsLists, Button } from './styles'
 
 const Testimonials = () => {
   return (
     <Container>
-      <Background color='orange' full>
+      <Background color='yellow' full>
         <Center>
           <Title>Depoimentos</Title>
           <Text>Salvando vidas durante a epidemia de COVID-19</Text>
 
           <TestimonialsLists>
             {testimonials.map((testimony, index) => (
-              <IconText
+              <Testimony
                 key={index}
-                title={testimony.author}
-                description={testimony.content}
-                icon={testimony.photo}
+                name={testimony.name}
+                about={testimony.about}
+                text={testimony.content}
+                photo={testimony.photo}
+                color='orange'
               />
             ))}
           </TestimonialsLists>
+
+          <Button to='/' color='whiteOrange' rounded uppercase center>
+            Ver Mais Depoimentos
+          </Button>
         </Center>
       </Background>
     </Container>
