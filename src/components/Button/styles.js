@@ -1,16 +1,28 @@
 import styled from 'styled-components'
+import media from '@layouts/media'
 
 const Container = styled.div`
   width: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
-  ${({ center }) => center && `margin: auto;`};
+  overflow: hidden;
+
+  ${({ center }) =>
+    center &&
+    `
+    margin-left: auto;
+    margin-right: auto;
+  `};
 
   ${({ rounded }) =>
     rounded &&
     `
     border-radius: 2rem;
+
+    a {
+      border-radius: 2rem;
+    }
   `};
 
   ${({ circle }) =>
@@ -19,6 +31,12 @@ const Container = styled.div`
     border-radius: 100%;
     width: 3rem;
     height: 3rem;
+
+    a {
+      border-radius: 100%;
+      width: 3rem;
+      height: 3rem;
+    }
   `};
 
   ${({ theme, color }) =>
@@ -28,13 +46,15 @@ const Container = styled.div`
   `};
 
   a {
-    color: ${({ theme }) => theme.colors.green};
-    transition: ${({ theme }) => theme.transition};
+    color: ${({ theme, color }) => theme.colors[color]};
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-transform: ${({ uppercase }) => (uppercase ? 'uppercase' : 'inherit')};
+    border: 1px solid transparent;
+    font-weight: 700;
+    text-align: center;
 
     ${({ circle }) =>
       !circle &&
@@ -47,7 +67,6 @@ const Container = styled.div`
     ${({ theme, color }) =>
       color &&
       `
-      font-weight: 800;
       background-color: ${theme.buttons[color].color};
       background-image: ${theme.buttons[color].color};
       background-size: 100%;
@@ -64,8 +83,20 @@ const Container = styled.div`
     }
 
     &:hover {
-      opacity: 0.9;
+      ${({ theme, color }) =>
+        color &&
+        `
+        background: ${theme.buttons[color].color};
+        color: ${theme.buttons[color].background};
+        -webkit-text-fill-color: inherit; 
+        -moz-text-fill-color: inherit;
+        border-color: ${theme.colors[color]};
+      `};
     }
+  }
+
+  @media ${media.max.medium} {
+    margin-bottom: 1rem;
   }
 `
 
