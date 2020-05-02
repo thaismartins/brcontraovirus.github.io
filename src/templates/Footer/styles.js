@@ -3,7 +3,7 @@ import media from '@layouts/media'
 
 import WhatsappIcon from '@images/icons/whatsapp.svg'
 
-const Container = styled.header`
+const Container = styled.footer`
   width: 100%;
   margin-top: 2rem;
   padding: 4rem 0;
@@ -33,6 +33,7 @@ const Details = styled.div`
   @media ${media.max.small} {
     width: 100%;
     margin: 0 auto 3rem;
+    text-align: center;
   }
 `
 
@@ -67,6 +68,10 @@ const Phones = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.1;
+  }
+
+  @media ${media.max.small} {
+    margin-bottom: 1rem;
   }
 `
 

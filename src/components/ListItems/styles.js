@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import CheckIcon from '@images/check-pink.svg'
+import CheckIcon from '@images/icons/check-pink.svg'
 
 const Items = styled.ul`
   width: 100%;

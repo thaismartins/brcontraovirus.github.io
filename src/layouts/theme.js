@@ -1,67 +1,94 @@
+const black = '#000'
+const white = '#fff'
+const gray = '#bababa'
+const green = '#47bb8e'
+const blue = '#20c6e3'
+const yellow = '#dbcd35'
+const orange = '#ee9b37'
+const lightPurple = '#840bff'
+const purple = '#064bd8'
+const darkPurple = '#12367f'
+const pink = '#f26cc5'
+const red = '#d8362f'
+
+const gradients = {
+  green: `linear-gradient(20deg, ${green}, ${blue})`,
+  blue: `linear-gradient(20deg, ${blue}, ${green})`,
+  yellow: `linear-gradient(20deg, ${yellow}, ${orange})`,
+  orange: `linear-gradient(20deg, ${orange}, ${yellow})`,
+  purple: `linear-gradient(20deg, ${purple}, ${lightPurple})`,
+  darkPurple: `linear-gradient(20deg, ${darkPurple}, ${purple})`,
+  pink: `linear-gradient(20deg, ${pink}, ${red})`,
+}
+
 const theme = {
   colors: {
-    dark: '#000',
-    white: '#fff',
-    gray: '#bababa',
-    green: '#47bb8e',
-    blue: '#20c6e3',
-    yellow: '#dbcd35',
-    orange: '#ee9b37',
-    purple: '#064bd8',
-    pink: '#840bff',
-    red: '#bf2f29',
-    gradients: {
-      green: `linear-gradient(20deg, #47bb8e, #20c6e3)`,
-      yellow: `linear-gradient(20deg, #dbcd35, #ee9b37)`,
-      orange: `linear-gradient(20deg, #ee9b37, #dbcd35)`,
-      purple: `linear-gradient(20deg, #064bd8, #840bff)`,
-      pink: `linear-gradient(80deg, #f364b3, #bf2f29)`,
-    },
+    dark: black,
+    white,
+    gray,
+    green,
+    blue,
+    yellow,
+    orange,
+    purple,
+    darkPurple,
+    pink,
+    red,
+    gradients,
     shadows: {
       yellow: `rgba(219, 205, 53, .5)`,
       orange: `rgba(238, 155, 55, .5)`,
       purple: `rgba(6, 75, 216, .5)`,
+      darkPurple: `rgba(18, 54, 127, .5)`,
       green: `rgba(71, 187, 142, .5)`,
     },
     texts: {
       purple: {
-        gradient: `linear-gradient(180deg, #064bd8, #840bff)`,
-        color: '#064bd8',
+        gradient: `linear-gradient(0deg, ${lightPurple} 20%, ${purple} 100%)`,
+        color: purple,
+      },
+      darkPurple: {
+        gradient: `linear-gradient(0deg, ${darkPurple} 20, ${purple}100 )`,
+        color: darkPurple,
       },
     },
   },
   buttons: {
-    white: {
-      background: '#fff',
-      color: '#fff',
-    },
     green: {
-      background: `linear-gradient(20deg, #47bb8e, #20c6e3)`,
-      color: '#fff',
+      background: gradients.green,
+      color: white,
     },
-    'white-green': {
-      background: '#fff',
-      color: `linear-gradient(20deg, #47bb8e, #20c6e3)`,
+    whiteGreen: {
+      background: white,
+      color: gradients.green,
     },
     yellow: {
-      background: `linear-gradient(20deg, #dbcd35, #ee9b37)`,
-      color: '#fff',
+      background: gradients.yellow,
+      color: white,
     },
-    'white-yellow': {
-      background: '#fff',
-      color: `linear-gradient(20deg, #dbcd35, #ee9b37)`,
+    whiteYellow: {
+      background: white,
+      color: gradients.yellow,
     },
     purple: {
-      background: `linear-gradient(20deg, #064bd8, #840bff)`,
-      color: '#fff',
+      background: gradients.purple,
+      color: white,
+    },
+    darkPurple: {
+      background: gradients.darkPurple,
+      color: white,
+    },
+    pink: {
+      background: gradients.pink,
+      color: white,
     },
     orange: {
-      background: `linear-gradient(20deg, #ee9b37, #dbcd35)`,
-      color: '#fff',
+      background: gradients.orange,
+      color: white,
     },
-    'white-orange': {
-      background: '#fff',
-      color: `linear-gradient(20deg, #ee9b37, #dbcd35)`,
+    whiteOrange: {
+      background: white,
+      color: gradients.orange,
     },
   },
   transition: 'all 0.3s ease-in-out',

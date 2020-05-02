@@ -11,7 +11,7 @@ const Container = styled.div`
   &:before {
     content: '';
     width: 90%;
-    height: 2px;
+    height: 0.15rem;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -39,8 +39,8 @@ const Wrapper = styled.div`
   justify-content: center;
   z-index: 2;
   color: ${({ theme }) => theme.colors.white};
-  font-weight: 800;
-  font-size: 2rem;
+  font-weight: 700;
+  font-size: 1.875rem;
 
   ${({ theme, color }) =>
     color &&

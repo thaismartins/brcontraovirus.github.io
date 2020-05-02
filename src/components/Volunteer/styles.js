@@ -4,20 +4,22 @@ const Container = styled.div`
   width: 100%;
   box-shadow: 0 0 0.5rem 0.25rem
     ${({ theme, color }) => theme.colors.shadows[color]};
+  background: ${({ theme }) => theme.colors.white};
   text-align: center;
   border-radius: 2.5rem;
   cursor: pointer;
   flex-basis: calc(33.33333% - 2rem);
-  margin-top: 6rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
   margin-right: 2rem;
-  padding: 9rem 2rem 4rem;
+  padding: 7rem 1.5rem 2rem;
   position: relative;
+  min-height: 22rem;
 `
 
 const ImageWrapper = styled.div`
-  width: 12rem;
-  height: 12rem;
+  width: 8rem;
+  height: 8rem;
   background: ${({ theme }) => theme.colors.white};
   border-radius: 50%;
   display: flex;
@@ -25,22 +27,15 @@ const ImageWrapper = styled.div`
   align-items: center;
   margin: 1rem auto;
   position: absolute;
-  top: -6rem;
+  top: -4rem;
   left: 0;
   right: 0;
-
-  &:before {
-    content: '';
-    width: calc(100% + 0.5rem);
-    height: calc(100% + 0.5rem);
-    position: absolute;
-    top: -0.25rem;
-    left: -0.25rem;
-    margin: auto;
-    z-index: -1;
-    border-radius: 50%;
-    background: ${({ theme, color }) => theme.colors.gradients[color]};
-  }
+  border-radius: 50%;
+  overflow: hidden;
+  background-image: ${({ theme, color }) => theme.colors.gradients[color]};
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  padding: 0.25rem;
 
   .gatsby-image-wrapper {
     width: 100%;
@@ -50,13 +45,13 @@ const ImageWrapper = styled.div`
 `
 
 const Name = styled.p`
-  font-size: 2rem;
-  font-weight: 800;
+  font-size: 1.75rem;
+  font-weight: 700;
 
   ${({ theme, color }) =>
     color &&
     `
-    font-weight: 800;
+    font-weight: 700;
     background-color: ${theme.colors.texts[color].color};
     background-image: ${theme.colors.texts[color].gradient};
     background-size: 100%;
@@ -73,6 +68,7 @@ const Occupation = styled.p`
 `
 
 const Description = styled.p`
+  font-size: 0.98rem;
   color: ${({ theme }) => theme.colors.gray};
 `
 
