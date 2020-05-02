@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Nunito', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-stretch: normal;
     font-weight: 400;
@@ -66,7 +66,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   b, strong, em {
-    font-weight: 800;
+    font-weight: 700;
   }
 
   i {

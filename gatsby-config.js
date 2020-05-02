@@ -12,24 +12,12 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `@images`,
+        path: path.resolve(__dirname, 'src/images'),
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#215ec7`,
-        display: `minimal-ui`,
-        icon: `src/images/favicon.png`,
-      },
-    },
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
@@ -50,7 +38,7 @@ module.exports = {
         fonts: [
           {
             family: `Nunito`,
-            variants: [`400`, `800`],
+            variants: [`400`, `700`, `800`],
           },
         ],
         display: 'swap',

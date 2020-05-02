@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from '@layouts/media'
 
 const Container = styled.div`
   width: 100%;
@@ -10,7 +11,7 @@ const Container = styled.div`
   &:before {
     content: '';
     width: 90%;
-    height: 2px;
+    height: 0.15rem;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -23,7 +24,7 @@ const Container = styled.div`
     ${({ theme, color }) =>
       color &&
       `
-      background: ${theme.buttons[color].background};
+      background: ${theme.colors.gradients[color]};
     `};
   }
 `
@@ -38,13 +39,18 @@ const Wrapper = styled.div`
   justify-content: center;
   z-index: 2;
   color: ${({ theme }) => theme.colors.white};
-  font-weight: 800;
+  font-weight: 700;
+  font-size: 1.875rem;
 
   ${({ theme, color }) =>
     color &&
     `
     background: ${theme.buttons[color].background};
   `};
+
+  @media ${media.max.medium} {
+    font-size: 1.5rem;
+  }
 `
 
 export { Container, Wrapper }
