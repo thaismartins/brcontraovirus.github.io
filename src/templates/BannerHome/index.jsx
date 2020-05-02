@@ -2,9 +2,8 @@ import React from 'react'
 
 import Center from '@components/Center'
 import Background from '@components/Background'
-import Button from '@components/Button'
 
-import { Container, Content, Title, Subtitle, Buttons } from './styles'
+import { Container, Content, Title, Subtitle, Buttons, Button } from './styles'
 
 const BannerHome = () => {
   return (
@@ -12,17 +11,17 @@ const BannerHome = () => {
       <Background image='banner.jpg' alt='Brasil contra o Vírus' full>
         <Center>
           <Content>
-            <Title>Brasil contra o Virus</Title>
+            <Title>Brasil contra o Vírus</Title>
 
             <Subtitle>
               Rede colaborativa de combate ao COVID-19 no Brasil
             </Subtitle>
 
             <Buttons>
-              <Button color='white-green' rounded uppercase to='/'>
+              <Button color='whiteGreen' rounded uppercase to='/'>
                 Faça Parte
               </Button>
-              <Button color='white-green' rounded uppercase to='/'>
+              <Button color='whiteGreen' rounded uppercase to='/'>
                 Vaquinha
               </Button>
             </Buttons>
