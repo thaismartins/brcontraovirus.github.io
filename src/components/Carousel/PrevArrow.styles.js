@@ -6,7 +6,7 @@ const Container = styled.div`
   height: 4rem;
   position: absolute;
   left: 1rem;
-  top: 30%;
+  top: calc(50% - 4rem);
   cursor: pointer;
 
   &:before {
