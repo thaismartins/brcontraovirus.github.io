@@ -3,7 +3,6 @@ import media from '@layouts/media'
 
 const Container = styled.div`
   width: 100%;
-  margin: 2rem 0;
   color: ${({ theme }) => theme.colors.white};
 `
 
@@ -11,11 +10,12 @@ const Title = styled.h2`
   width: 100%;
   text-align: center;
   font-size: 4rem;
-  font-weight: 800;
+  font-weight: 700;
   color: ${({ theme }) => theme.colors.white};
   padding-bottom: 1rem;
   margin-bottom: 4rem;
-  border-bottom: 0.25rem solid ${({ theme }) => theme.colors.white};
+  border-bottom: 0.15rem solid ${({ theme }) => theme.colors.white};
+  text-transform: uppercase;
 
   @media ${media.max.medium} {
     font-size: 2.5rem;
@@ -37,8 +37,8 @@ const ImageWrapper = styled.div`
   flex-basis: 45%;
 
   @media ${media.max.medium} {
-    width: 100%;
-    margin-bottom: 4rem;
+    width: 80%;
+    margin: 0 auto 4rem;
   }
 `
 
@@ -73,12 +73,13 @@ const Equipament = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
-  min-height: 10rem;
+  min-height: 12rem;
   padding-left: 4rem;
   margin-top: 4rem;
 
   @media ${media.max.medium} {
     padding-left: 0;
+    margin-top: 2rem;
   }
 `
 
@@ -111,15 +112,16 @@ const EquipamentIcon = styled.div`
 
 const EquipamentTitle = styled.div`
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 700;
   padding-left: 6rem;
   padding-bottom: 0.5rem;
-  border-bottom: 0.25rem solid ${({ theme }) => theme.colors.white};
+  border-bottom: 0.15rem solid ${({ theme }) => theme.colors.white};
   width: 100%;
 
   @media ${media.max.medium} {
     padding-left: 0;
     margin-bottom: 1rem;
+    font-size: 1.5rem;
     text-align: center;
   }
 `

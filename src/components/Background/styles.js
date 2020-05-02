@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from '@layouts/media'
 
 const Container = styled.div`
   width: 100%;
@@ -6,8 +7,12 @@ const Container = styled.div`
     color ? theme.colors.gradients[color] : ''};
   overflow: hidden;
   position: relative;
+  min-height: ${({ full }) => (full ? 'calc(100vh - 7rem)' : 'auto')};
+  padding: ${({ hasImage }) => (hasImage ? '0' : '8rem 0')};
 
-  ${({ full }) => (full ? 'min-height: 80vh;' : 'padding: 4rem 0;')};
+  @media ${media.max.medium} {
+    padding: ${({ hasImage }) => (hasImage ? '0' : '2rem 0')};
+  }
 `
 
 const ImageWrapper = styled.div`

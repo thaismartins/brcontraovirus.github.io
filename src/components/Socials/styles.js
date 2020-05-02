@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from '@layouts/media'
 
 import TwitterIcon from '@images/icons/twitter.svg'
 import FacebookIcon from '@images/icons/facebook.svg'
@@ -14,6 +15,10 @@ const Container = styled.div`
   padding: 0.75rem 0;
   display: flex;
   justify-content: flex-end;
+
+  @media ${media.max.small} {
+    justify-content: center;
+  }
 `
 const Item = styled.a`
   width: 1.75rem;
@@ -33,6 +38,10 @@ const Item = styled.a`
 
   &:hover {
     background: ${({ theme }) => theme.colors.gradients.purple};
+  }
+
+  @media ${media.max.small} {
+    margin: 0 0.5rem;
   }
 `
 
