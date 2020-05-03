@@ -1,25 +1,17 @@
 import React from 'react'
 
 import Center from '@components/Center'
-import Image from '@components/Image'
 
-import { Container, Title, Description, ImageWrapper } from './styles'
+import { Container, Title, Description, Image } from './styles'
 
 const Error = () => {
   return (
     <Container>
       <Center>
-        <ImageWrapper>
-          <Image src='404.svg' alt='Página não encontrada' />
-        </ImageWrapper>
+        <Image />
 
-        <Title>Oops...</Title>
-        <Description>
-          Não conseguimos encontrar esta página
-          <span role='img' aria-label='triste'>
-            &#128528;
-          </span>
-        </Description>
+        <Title>Oops!</Title>
+        <Description>Não conseguimos encontrar esta página...</Description>
       </Center>
     </Container>
   )

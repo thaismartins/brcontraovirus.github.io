@@ -1,4 +1,7 @@
 import styled from 'styled-components'
+import media from '@layouts/media'
+
+import ErrorIcon from '@images/icons/404.svg'
 
 const Container = styled.div`
   width: 100%;
@@ -10,16 +13,26 @@ const Container = styled.div`
 
 const Title = styled.h1`
   font-weight: 700;
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 `
 
 const Description = styled.p``
 
-const ImageWrapper = styled.div`
-  width: 100%;
-  max-width: 200px;
-  opacity: 0.8;
+const Image = styled.div`
+  max-width: 100%;
+  width: 12rem;
+  height: 12rem;
+  mask-image: url(${ErrorIcon});
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background: ${({ theme }) => theme.colors.gradients.green};
+
+  @media ${media.max.small} {
+    width: 10rem;
+    height: 10rem;
+  }
 `
 
-export { Container, Title, Description, ImageWrapper }
+export { Container, Title, Description, Image }
