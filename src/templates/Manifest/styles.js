@@ -1,28 +1,37 @@
 import styled from 'styled-components'
+import media from '@layouts/media'
 
-const Container = styled.header`
+const Container = styled.div`
   width: 100%;
-  margin: 2rem 0;
   color: ${({ theme }) => theme.colors.white};
 `
 
 const Title = styled.h2`
   width: 100%;
   text-align: center;
-  font-size: 4rem;
-  font-weight: 800;
+  font-size: 3.75rem;
+  font-weight: 700;
   color: ${({ theme }) => theme.colors.white};
   padding-bottom: 1rem;
   margin-bottom: 2rem;
-  border-bottom: 0.25rem solid ${({ theme }) => theme.colors.white};
+  border-bottom: 0.15rem solid ${({ theme }) => theme.colors.white};
+  text-transform: uppercase;
+
+  @media ${media.max.medium} {
+    font-size: 2rem;
+  }
 `
 
 const Text = styled.p`
-  width: 80%;
+  width: 90%;
   margin: auto;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 2rem;
   color: ${({ theme }) => theme.colors.white};
+
+  @media ${media.max.medium} {
+    font-size: 1.25rem;
+  }
 `
 
 export { Container, Title, Text }

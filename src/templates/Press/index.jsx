@@ -1,28 +1,34 @@
 import React from 'react'
+
+import PageBlock from '@components/PageBlock'
+import Center from '@components/Center'
+import Carousel from '@components/Carousel'
 import Headline from '@components/Headline'
+
+import { Container, Title } from './styles'
+
+import headlines from './headlines'
 
 const Press = () => {
   return (
-    <div>
-      <Headline
-        image='globo.png'
-        title='globo'
-        text='Com falta de equipamentos de proteção individual, hospitais contam com doações da sociedade civil.'
-        link='http://google.com'
-      />
-      <Headline
-        image='g1.png'
-        title='g1'
-        text='Brasileira cria rede para imprimir em 3D equipamentos de UTI usados no tratamento contra o coronavírus.'
-        link='http://google.com'
-      />
-      <Headline
-        image='sbt.jpeg'
-        title='sbt'
-        text='Mais de cem empresas poderão usar as linhas de montagem para fabricar respiradores hospitalares.'
-        link='http://google.com'
-      />
-    </div>
+    <Container>
+      <Title>Reportagens</Title>
+      <PageBlock color='green' border>
+        <Center>
+          <Carousel dots arrows color='green'>
+            {headlines.map((headline, index) => (
+              <Headline
+                key={index}
+                image={headline.image}
+                title={headline.title}
+                text={headline.title}
+                link={headline.link}
+              />
+            ))}
+          </Carousel>
+        </Center>
+      </PageBlock>
+    </Container>
   )
 }
 

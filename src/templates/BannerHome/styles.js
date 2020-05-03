@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import media from '@layouts/media'
 
+import ButtonComponent from '@components/Button'
+
 const Container = styled.div`
   width: 100%;
   height: 100%;
@@ -18,8 +20,8 @@ const Content = styled.div`
 
 const Title = styled.h1`
   margin-bottom: 1rem;
-  font-size: 4rem;
-  font-weight: 800;
+  font-size: 4.5rem;
+  font-weight: 700;
   color: ${({ theme }) => theme.colors.white};
   text-shadow: 0.25rem 0.25rem 0 ${({ theme }) => theme.colors.dark};
 
@@ -29,8 +31,8 @@ const Title = styled.h1`
 `
 
 const Subtitle = styled.h2`
-  font-size: 2rem;
-  font-weight: 800;
+  font-size: 2.25rem;
+  font-weight: 700;
   margin-bottom: 2rem;
   color: ${({ theme }) => theme.colors.white};
   text-shadow: 0.25rem 0.25rem 0 ${({ theme }) => theme.colors.dark};
@@ -43,13 +45,21 @@ const Subtitle = styled.h2`
 const Buttons = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
-  max-width: 24rem;
 
   @media ${media.max.medium} {
     flex-direction: column;
   }
 `
 
-export { Container, Content, Title, Subtitle, Buttons }
+const Button = styled(ButtonComponent)`
+  font-size: 1.25rem;
+  margin: 0 1rem;
+
+  @media ${media.max.medium} {
+    margin-bottom: 1rem;
+  }
+`
+
+export { Container, Content, Title, Subtitle, Buttons, Button }

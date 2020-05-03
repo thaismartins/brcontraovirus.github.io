@@ -8,11 +8,20 @@ import NextArrow from './NextArrow'
 import { Container } from './styles'
 import settings from './settings'
 
-const Carousel = ({ children, dots, arrows, color }) => {
+const Carousel = ({
+  children,
+  dots,
+  arrows,
+  slidesToShow,
+  slidesToScroll,
+  color,
+}) => {
   const configs = {
     ...settings,
     dots,
     arrows,
+    slidesToShow,
+    slidesToScroll,
     prevArrow: <PrevArrow color={color} />,
     nextArrow: <NextArrow color={color} />,
   }
@@ -26,12 +35,16 @@ const Carousel = ({ children, dots, arrows, color }) => {
 
 Carousel.propTypes = {
   children: PropTypes.node.isRequired,
+  slidesToShow: PropTypes.number,
+  slidesToScroll: PropTypes.number,
   color: PropTypes.string,
   dots: PropTypes.bool,
   arrows: PropTypes.bool,
 }
 
 Carousel.defaultProps = {
+  slidesToShow: 3,
+  slidesToScroll: 1,
   color: 'purple',
   dots: false,
   arrows: false,

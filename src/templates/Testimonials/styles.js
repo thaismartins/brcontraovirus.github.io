@@ -1,20 +1,27 @@
 import styled from 'styled-components'
+import media from '@layouts/media'
+
+import ButtonComponent from '@components/Button'
 
 const Container = styled.div`
   width: 100%;
   padding: 4rem 0;
-  color: ${({ theme }) => theme.colors.white};
 `
 
 const Title = styled.h2`
   width: 100%;
   text-align: center;
-  font-size: 4rem;
-  font-weight: 800;
+  font-size: 3.75rem;
+  font-weight: 700;
   color: ${({ theme }) => theme.colors.white};
   padding-bottom: 1rem;
   margin-bottom: 2rem;
-  border-bottom: 0.25rem solid ${({ theme }) => theme.colors.white};
+  border-bottom: 0.15rem solid ${({ theme }) => theme.colors.white};
+  text-transform: uppercase;
+
+  @media ${media.max.medium} {
+    font-size: 2.5rem;
+  }
 `
 
 const Text = styled.p`
@@ -25,12 +32,23 @@ const Text = styled.p`
   font-size: 1.25rem;
   line-height: 2rem;
   margin-bottom: 3rem;
+
+  @media ${media.max.medium} {
+    width: 100%;
+  }
 `
 
 const TestimonialsLists = styled.div`
   width: 100%;
-  padding: 2rem 0;
-  display: flex;
+  margin-bottom: 6rem;
+
+  @media ${media.max.medium} {
+    margin-bottom: 2rem;
+  }
 `
 
-export { Container, Title, Text, TestimonialsLists }
+const Button = styled(ButtonComponent)`
+  font-size: 1.25rem;
+`
+
+export { Container, Title, Text, TestimonialsLists, Button }

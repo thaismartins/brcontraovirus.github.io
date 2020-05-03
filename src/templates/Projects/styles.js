@@ -1,6 +1,10 @@
 import styled from 'styled-components'
+import media from '@layouts/media'
 
-const Container = styled.header`
+import ProjectComponent from '@components/Project'
+import ButtonComponent from '@components/Button'
+
+const Container = styled.div`
   width: 100%;
   padding: 2rem 0;
   color: ${({ theme }) => theme.colors.white};
@@ -9,27 +13,50 @@ const Container = styled.header`
 const Title = styled.h2`
   width: 100%;
   text-align: center;
-  font-size: 4rem;
-  font-weight: 800;
+  font-size: 3.75rem;
+  font-weight: 700;
   color: ${({ theme }) => theme.colors.dark};
   padding-bottom: 1rem;
   margin: 2rem 0;
-  border-bottom: 0.25rem solid ${({ theme }) => theme.colors.orange};
+  border-bottom: 0.15rem solid ${({ theme }) => theme.colors.orange};
+  text-transform: uppercase;
+
+  @media ${media.max.medium} {
+    font-size: 2rem;
+  }
 `
 
 const Text = styled.p`
   width: 80%;
   margin: auto;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 2rem;
   color: ${({ theme }) => theme.colors.dark};
   margin-bottom: 3rem;
+
+  @media ${media.max.medium} {
+    font-size: 1.25rem;
+    width: 100%;
+  }
 `
 
 const Projects = styled.div`
   display: flex;
-  justify-content: flex-start;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+`
+
+const Project = styled(ProjectComponent)`
+  margin: 0.5rem;
+  flex-basis: calc(33.33333% - 1rem);
+
+  @media ${media.max.medium} {
+    flex-basis: calc(50% - 1rem);
+  }
+
+  @media ${media.max.small} {
+    flex-basis: 100%;
+  }
 `
 
 const Categories = styled.div`
@@ -37,12 +64,13 @@ const Categories = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 2rem 0;
 `
 
 const Category = styled.div`
-  color: ${({ theme }) => theme.colors.orange};
-  font-weight: 800;
+  font-weight: 700;
+  font-size: 1.25rem;
   width: fit-content;
   max-width: 100%;
   padding: 0.75rem 2.5rem;
@@ -52,11 +80,29 @@ const Category = styled.div`
   margin-right: 1rem;
   border-radius: 2rem;
 
+  @media ${media.max.medium} {
+    flex: 0 1 calc(50% - 1rem);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
   ${({ theme, active }) =>
     active &&
     `
-    background: ${theme.colors.orange};
-    color: ${theme.colors.white};
+    background: ${theme.colors.gradients.orange};
+    background-color: ${theme.colors.white};
+  `}
+
+  ${({ theme, active }) =>
+    !active &&
+    `
+    background-color: ${theme.buttons.orange.color};
+    background-image: ${theme.colors.gradients.orange};
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
   `}
 
   &:hover {
@@ -64,4 +110,42 @@ const Category = styled.div`
   }
 `
 
-export { Container, Title, Text, Projects, Categories, Category }
+const Buttons = styled.div`
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0;
+
+  &:before {
+    content: '';
+    width: 90%;
+    height: 0.15rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 0;
+    z-index: -1;
+    background: ${({ theme }) => theme.colors.gradients.orange};
+  }
+`
+
+const Button = styled(ButtonComponent)`
+  font-size: 1.25rem;
+`
+
+export {
+  Container,
+  Title,
+  Text,
+  Projects,
+  Project,
+  Categories,
+  Category,
+  Buttons,
+  Button,
+}
