@@ -10,8 +10,14 @@ const Container = styled.div`
   margin-top: 6rem;
   margin-bottom: 2rem;
   margin-right: 2rem;
-  padding: 6rem 2rem 4rem;
+  padding: 6rem 2rem 2rem;
   position: relative;
+  background: ${({ theme }) => theme.colors.white};
+  z-index: 0;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `
 
 const Logo = styled.div`
@@ -27,28 +33,20 @@ const Logo = styled.div`
   top: -6rem;
   left: 0;
   right: 0;
-
-  &:before {
-    content: '';
-    width: calc(100% + 0.5rem);
-    height: calc(100% + 0.5rem);
-    position: absolute;
-    top: -0.25rem;
-    left: -0.25rem;
-    margin: auto;
-    z-index: -1;
-    border-radius: 50%;
-    background: ${({ theme, color }) => theme.colors.gradients[color]};
-  }
+  background-image: ${({ theme, color }) => theme.colors.gradients[color]};
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  padding: 0.25rem;
+  border-radius: 50%;
 
   .gatsby-image-wrapper {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    background: ${({ theme }) => theme.colors.white};
   }
 `
 const Text = styled.div`
-  margin-bottom: 4rem;
   text-align: left;
 `
 

@@ -11,6 +11,7 @@ import Projects from '@templates/Projects'
 import MakerCycle from '@templates/MakerCycle'
 import Testimonials from '@templates/Testimonials'
 import Press from '@templates/Press'
+import Partners from '@templates/Partners'
 
 const IndexPage = () => (
   <Layout>
@@ -22,6 +23,7 @@ const IndexPage = () => (
     <Projects />
     <MakerCycle />
     <Press />
+    <Partners />
   </Layout>
 )
 

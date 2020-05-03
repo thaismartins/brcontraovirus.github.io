@@ -13,13 +13,16 @@ const NextArrow = ({ className, style, onClick, color }) => (
 )
 
 NextArrow.propTypes = {
-  className: PropTypes.string.isRequired,
-  style: PropTypes.element.isRequired,
-  onClick: PropTypes.func.isRequired,
+  className: PropTypes.string,
+  style: PropTypes.object,
+  onClick: PropTypes.func,
   color: PropTypes.string,
 }
 
 NextArrow.defaultProps = {
+  className: '',
+  style: {},
+  onClick: () => {},
   color: 'purple',
 }
 
