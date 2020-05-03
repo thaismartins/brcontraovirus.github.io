@@ -13,13 +13,16 @@ const PrevArrow = ({ className, style, onClick, color }) => (
 )
 
 PrevArrow.propTypes = {
-  className: PropTypes.string.isRequired,
-  style: PropTypes.element.isRequired,
-  onClick: PropTypes.func.isRequired,
+  className: PropTypes.string,
+  style: PropTypes.object,
+  onClick: PropTypes.func,
   color: PropTypes.string,
 }
 
 PrevArrow.defaultProps = {
+  className: '',
+  style: {},
+  onClick: () => {},
   color: 'purple',
 }
 

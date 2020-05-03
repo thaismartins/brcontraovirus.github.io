@@ -10,12 +10,12 @@ const Headline = ({ title, text, link, image, color }) => {
   return (
     <Container color={color}>
       <Logo color={color}>
-        <Image src={image} alt={title} />
+        <Image src={`press/${image}`} alt={title} />
       </Logo>
 
       <Text>{text}</Text>
 
-      <Button to={link} color={color} rounded uppercase center>
+      <Button to={link} color={color} rounded uppercase center blank>
         Saiba Mais
       </Button>
     </Container>

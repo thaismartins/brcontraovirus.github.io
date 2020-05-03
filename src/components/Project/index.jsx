@@ -13,17 +13,17 @@ import {
   Category,
 } from './styles'
 
-const Project = ({ image, title, category, show, color }) =>
+const Project = ({ image, title, category, show, color, className }) =>
   show ? (
-    <Container color={color}>
+    <Container color={color} className={className}>
       <ImageWrapper>
         <Image src={image} alt={title} fit='cover' />
         <ButtonsWrapper color={color}>
           <Buttons>
-            <Button color='white-yellow' circle to='/'>
+            <Button color='whiteYellow' circle to='/'>
               <Image src='plus-orange.svg' alt='teste' />
             </Button>
-            <Button color='white-yellow' circle to='/'>
+            <Button color='whiteYellow' circle to='/'>
               <Image src='link-orange.svg' alt='teste' />
             </Button>
           </Buttons>
@@ -40,14 +40,14 @@ Project.propTypes = {
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
-  onMouseEnter: PropTypes.func.isRequired,
-  onMouseLeave: PropTypes.func.isRequired,
   color: PropTypes.string,
+  className: PropTypes.string,
   show: PropTypes.bool,
 }
 
 Project.defaultProps = {
   color: 'orange',
+  className: '',
   show: true,
 }
 

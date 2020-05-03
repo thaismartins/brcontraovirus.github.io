@@ -8,9 +8,6 @@ const Container = styled.div`
   border-radius: 2.5rem;
   overflow: hidden;
   cursor: pointer;
-  flex-basis: calc(33.33333% - 2rem);
-  margin-bottom: 2rem;
-  margin-right: 2rem;
 `
 
 const ImageWrapper = styled.div`
@@ -65,7 +62,7 @@ const Buttons = styled.div`
 
 const Title = styled.p`
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 700;
   color: ${({ theme }) => theme.colors.dark};
   margin-bottom: 0.5rem;
 `

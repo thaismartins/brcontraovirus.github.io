@@ -13,6 +13,8 @@ const Button = ({
   uppercase,
   children,
   center,
+  blank,
+  className,
 }) => (
   <Container
     link={link}
@@ -21,8 +23,15 @@ const Button = ({
     circle={circle}
     uppercase={uppercase}
     center={center}
+    className={className}
   >
-    <Link to={to}>{children}</Link>
+    {blank && (
+      <a href={to} target='_blank' rel='noopener noreferrer'>
+        {children}
+      </a>
+    )}
+
+    {!blank && <Link to={to}>{children}</Link>}
   </Container>
 )
 
@@ -34,6 +43,8 @@ Button.propTypes = {
   circle: PropTypes.bool,
   uppercase: PropTypes.bool,
   center: PropTypes.bool,
+  blank: PropTypes.bool,
+  className: PropTypes.string,
   color: PropTypes.string,
 }
 
@@ -43,6 +54,8 @@ Button.defaultProps = {
   circle: false,
   uppercase: false,
   center: false,
+  blank: false,
+  className: '',
   color: 'green',
 }
 
