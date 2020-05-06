@@ -18,7 +18,7 @@ const BannerHome = () => {
             </Subtitle>
 
             <Buttons>
-              <Button color='whiteGreen' rounded uppercase to='/'>
+              <Button color='whiteGreen' rounded uppercase to='#faca-parte'>
                 Faça Parte
               </Button>
               <Button color='whiteGreen' rounded uppercase to='/'>

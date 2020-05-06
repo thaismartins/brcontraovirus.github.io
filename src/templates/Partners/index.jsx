@@ -39,7 +39,7 @@ const Partners = () => {
             ))}
           </Carousel>
           <Buttons>
-            <Button to='/' color={color} rounded uppercase>
+            <Button to='#faca-parte' color={color} rounded uppercase>
               Faça Parte da Lista
             </Button>
             <Button to='/' color={color} rounded uppercase>
