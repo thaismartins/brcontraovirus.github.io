@@ -66,12 +66,23 @@ const Text = styled.p`
   font-size: 1.25rem;
   line-height: 1.5rem;
   margin-bottom: 3rem;
+
+  @media ${media.max.medium} {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
 `
 
 const List = styled.div`
   display: flex;
   justify-content: space-around;
   margin-bottom: 3rem;
+
+  @media ${media.max.medium} {
+    margin-bottom: 2rem;
+  }
 `
 
 const Name = styled.p`
@@ -79,6 +90,10 @@ const Name = styled.p`
   font-size: 1.5rem;
   font-weight: 700;
   margin-top: 0.75rem;
+
+  @media ${media.max.medium} {
+    font-size: 1.25rem;
+  }
 `
 
 const Item = styled.a`
@@ -87,6 +102,12 @@ const Item = styled.a`
   flex-direction: column;
   text-align: center;
   padding: 1rem;
+  flex: 1;
+
+  @media ${media.max.medium} {
+    font-size: 1.25rem;
+    padding: 0.5rem;
+  }
 
   .gatsby-image-wrapper {
     display: flex;
@@ -101,7 +122,7 @@ const Item = styled.a`
 
   &:hover {
     .gatsby-image-wrapper {
-      filter: brightness(2);
+      filter: brightness(1.2);
     }
 
     ${Name} {
@@ -133,6 +154,7 @@ const Button = styled(ButtonComponent)`
 
   @media ${media.max.medium} {
     margin-bottom: 1rem;
+    font-size: 1rem;
   }
 `
 
