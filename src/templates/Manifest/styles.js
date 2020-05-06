@@ -30,7 +30,8 @@ const Text = styled.p`
   color: ${({ theme }) => theme.colors.white};
 
   @media ${media.max.medium} {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 `
 

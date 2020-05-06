@@ -28,6 +28,12 @@ const Icon = styled.div`
   background-clip: padding-box, border-box;
   padding: 0.25rem;
 
+  @media ${media.max.medium} {
+    width: 6rem;
+    height: 6rem;
+    padding: 0.2rem;
+  }
+
   .gatsby-image-wrapper {
     width: 100%;
     height: 100%;
@@ -36,7 +42,7 @@ const Icon = styled.div`
   }
 `
 
-const Title = styled.p`
+const Number = styled.p`
   font-size: 4rem;
   font-weight: 800;
 
@@ -54,13 +60,17 @@ const Title = styled.p`
   `};
 
   @media ${media.max.medium} {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 `
 
 const Description = styled.p`
   margin-bottom: 1rem;
   font-size: 1.25rem;
+
+  @media ${media.max.medium} {
+    font-size: 1rem;
+  }
 `
 
-export { Container, Icon, Title, Description }
+export { Container, Icon, Number, Description }

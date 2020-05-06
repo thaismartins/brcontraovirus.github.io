@@ -4,6 +4,10 @@ import media from '@layouts/media'
 const Container = styled.div`
   width: 100%;
   padding: 8rem 0;
+
+  @media ${media.max.medium} {
+    padding: 3rem 0;
+  }
 `
 
 const Title = styled.h2`
@@ -14,7 +18,8 @@ const Title = styled.h2`
   text-transform: uppercase;
 
   @media ${media.max.medium} {
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 `
 
@@ -30,11 +35,7 @@ const Number = styled.div`
 
   @media ${media.max.medium} {
     flex: 0 1 calc(50% - 1rem);
-  }
-
-  @media ${media.max.small} {
-    padding: 2rem 0;
-    flex: 1 1 100%;
+    padding: 1rem 0;
   }
 `
 

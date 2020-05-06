@@ -5,7 +5,11 @@ import ButtonComponent from '@components/Button'
 
 const Container = styled.div`
   width: 100%;
-  padding: 4rem 0;
+  padding: 8rem 0;
+
+  @media ${media.max.medium} {
+    padding: 3rem 0;
+  }
 `
 
 const Title = styled.h2`
@@ -52,13 +56,17 @@ const Buttons = styled.div`
   align-items: center;
   margin-top: 4rem;
 
-  @media ${media.max.small} {
+  @media ${media.max.medium} {
     flex-direction: column;
   }
 `
 
 const Button = styled(ButtonComponent)`
   font-size: 1.25rem;
+
+  @media ${media.max.medium} {
+    font-size: 1rem;
+  }
 `
 
 export { Container, Title, Partner, Buttons, Button }

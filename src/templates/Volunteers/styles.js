@@ -4,7 +4,12 @@ import media from '@layouts/media'
 import ButtonComponent from '@components/Button'
 
 const Container = styled.div`
-  margin: 6rem 0;
+  width: 100%;
+  padding: 8rem 0;
+
+  @media ${media.max.medium} {
+    padding: 3rem 0;
+  }
 `
 
 const Title = styled.h2`
@@ -18,6 +23,7 @@ const Title = styled.h2`
 
   @media ${media.max.medium} {
     font-size: 2rem;
+    margin-bottom: 2rem;
   }
 `
 
@@ -38,6 +44,10 @@ const Team = styled.div`
 
 const Button = styled(ButtonComponent)`
   font-size: 1.25rem;
+
+  @media ${media.max.medium} {
+    font-size: 1rem;
+  }
 `
 
 export { Container, Title, Teams, Team, Button }

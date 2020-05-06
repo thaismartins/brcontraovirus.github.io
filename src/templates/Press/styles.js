@@ -2,7 +2,12 @@ import styled from 'styled-components'
 import media from '@layouts/media'
 
 const Container = styled.div`
-  margin: 6rem 0;
+  width: 100%;
+  padding: 8rem 0;
+
+  @media ${media.max.medium} {
+    padding: 3rem 0;
+  }
 `
 
 const Title = styled.h2`

@@ -4,7 +4,7 @@ import media from '@layouts/media'
 const Content = styled.div`
   width: 100%;
   position: relative;
-  min-height: 80vh;
+  min-height: 70vh;
   overflow: hidden;
   padding-top: 3rem;
   top: -2.1rem;
@@ -41,7 +41,7 @@ const Content = styled.div`
       color &&
       `
       background: ${theme.colors[color]};
-      background: radial-gradient(circle, ${theme.colors[color]} -100%, rgba(255,255,255,0) 65%);
+      background: radial-gradient(circle, ${theme.colors[color]} -100%, rgba(255,255,255,0) 62%);
     `};
   }
 

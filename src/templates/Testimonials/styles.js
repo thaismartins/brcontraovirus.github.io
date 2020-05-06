@@ -5,7 +5,11 @@ import ButtonComponent from '@components/Button'
 
 const Container = styled.div`
   width: 100%;
-  padding: 4rem 0;
+  padding: 8rem 0;
+
+  @media ${media.max.medium} {
+    padding: 3rem 0;
+  }
 `
 
 const Title = styled.h2`
@@ -20,7 +24,7 @@ const Title = styled.h2`
   text-transform: uppercase;
 
   @media ${media.max.medium} {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 `
 
@@ -35,6 +39,7 @@ const Text = styled.p`
 
   @media ${media.max.medium} {
     width: 100%;
+    font-size: 1rem;
   }
 `
 
@@ -49,6 +54,10 @@ const TestimonialsLists = styled.div`
 
 const Button = styled(ButtonComponent)`
   font-size: 1.25rem;
+
+  @media ${media.max.medium} {
+    font-size: 1rem;
+  }
 `
 
 export { Container, Title, Text, TestimonialsLists, Button }

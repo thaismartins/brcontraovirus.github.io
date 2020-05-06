@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from '@layouts/media'
 
 const Container = styled.div`
   width: 100%;
@@ -12,9 +13,14 @@ const Container = styled.div`
   margin-top: 4rem;
   margin-bottom: 2rem;
   margin-right: 2rem;
-  padding: 7rem 1.5rem 2rem;
+  padding: 7rem 2rem 2rem;
   position: relative;
   min-height: 22rem;
+
+  @media ${media.max.medium} {
+    padding-top: 6rem;
+    min-height: 10rem;
+  }
 `
 
 const ImageWrapper = styled.div`
