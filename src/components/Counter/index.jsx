@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import Image from '@components/Image'
 
-import { Container, Icon, Title, Description } from './styles'
+import { Container, Icon, Number, Description } from './styles'
 
 const style = {
   width: '80%',
@@ -34,7 +34,7 @@ const Counter = ({ number, description, icon, color }) => {
       <Icon color={color}>
         <Image src={`icons/${icon}`} alt={description} style={style} />
       </Icon>
-      <Title color={color} ref={numberRef} />
+      <Number color={color} ref={numberRef} />
       <Description>{description}</Description>
     </Container>
   )

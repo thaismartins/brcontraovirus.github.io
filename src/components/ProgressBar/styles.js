@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from '@layouts/media'
 
 const Container = styled.div`
   width: 100%;
@@ -24,6 +25,11 @@ const Progress = styled.div`
   border: 0.1rem solid ${({ theme }) => theme.colors.dark};
   position: relative;
   overflow: hidden;
+
+  @media ${media.max.medium} {
+    border-width: 0.05rem;
+    height: 1.5rem;
+  }
 
   &:after {
     content: '';

@@ -9,7 +9,7 @@ const Container = styled.div`
 const Title = styled.h2`
   width: 100%;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.75rem;
   font-weight: 700;
   color: ${({ theme }) => theme.colors.white};
   padding-bottom: 1rem;
@@ -18,7 +18,11 @@ const Title = styled.h2`
   text-transform: uppercase;
 
   @media ${media.max.medium} {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+
+  @media ${media.max.small} {
+    margin-bottom: 2rem;
   }
 `
 
@@ -40,6 +44,11 @@ const ImageWrapper = styled.div`
     width: 80%;
     margin: 0 auto 4rem;
   }
+
+  @media ${media.max.small} {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 `
 
 const TextWrapper = styled.div`
@@ -49,10 +58,21 @@ const TextWrapper = styled.div`
 
 const Text = styled.p`
   line-height: 2rem;
+  font-size: 1.125rem;
+
+  @media ${media.max.medium} {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 `
 
 const Items = styled.ul`
   margin-top: 2rem;
+  font-size: 1.125rem;
+
+  @media ${media.max.medium} {
+    font-size: 1rem;
+  }
 `
 
 const Equipaments = styled.div`
@@ -129,9 +149,11 @@ const EquipamentTitle = styled.div`
 const EquipamentText = styled.div`
   padding-left: 6rem;
   width: 100%;
+  font-size: 1.125rem;
 
   @media ${media.max.medium} {
     padding-left: 0;
+    font-size: 1rem;
   }
 `
 

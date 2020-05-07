@@ -15,7 +15,8 @@ const Container = styled.div`
   justify-content: space-between;
 
   @media ${media.max.medium} {
-    padding: 2rem;
+    padding: 5rem 2rem 2rem;
+    margin-top: 5rem;
     border-radius: 2rem;
   }
 `
@@ -45,21 +46,30 @@ const Photo = styled.div`
   }
 
   @media ${media.max.medium} {
-    position: relative;
+    position: absolute;
+    top: -4rem;
     right: 0;
     margin: 0 auto 2rem;
   }
 `
 const Text = styled.p`
+  font-size: 1.125rem;
+
   @media ${media.max.medium} {
     margin-bottom: 2rem;
+    font-size: 1rem;
   }
 `
 
 const Details = styled.div``
 
 const Name = styled.p`
+  font-size: 1.125rem;
   font-weight: 700;
+
+  @media ${media.max.medium} {
+    font-size: 1rem;
+  }
 `
 
 const Occupation = styled.p`
