@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from '@layouts/media'
 
 const Container = styled.div`
   width: 100%;
@@ -18,6 +19,11 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media ${media.max.medium} {
+    padding-top: 4rem;
+    min-height: 14rem;
+  }
 `
 
 const Logo = styled.div`
@@ -48,6 +54,10 @@ const Logo = styled.div`
 `
 const Text = styled.div`
   text-align: left;
+
+  @media ${media.max.medium} {
+    margin-bottom: 2rem;
+  }
 `
 
 export { Container, Logo, Text }

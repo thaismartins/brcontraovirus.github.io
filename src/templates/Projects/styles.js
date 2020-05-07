@@ -6,8 +6,11 @@ import ButtonComponent from '@components/Button'
 
 const Container = styled.div`
   width: 100%;
-  padding: 2rem 0;
-  color: ${({ theme }) => theme.colors.white};
+  padding: 8rem 0;
+
+  @media ${media.max.medium} {
+    padding: 3rem 0;
+  }
 `
 
 const Title = styled.h2`
@@ -23,6 +26,7 @@ const Title = styled.h2`
 
   @media ${media.max.medium} {
     font-size: 2rem;
+    margin-bottom: 1rem;
   }
 `
 
@@ -35,7 +39,8 @@ const Text = styled.p`
   margin-bottom: 3rem;
 
   @media ${media.max.medium} {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
     width: 100%;
   }
 `
@@ -79,11 +84,14 @@ const Category = styled.div`
   text-transform: uppercase;
   margin-right: 1rem;
   border-radius: 2rem;
+  color: ${({ theme }) => theme.colors.white};
 
   @media ${media.max.medium} {
     flex: 0 1 calc(50% - 1rem);
     text-align: center;
     margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
   }
 
   ${({ theme, active }) =>
@@ -136,6 +144,10 @@ const Buttons = styled.div`
 
 const Button = styled(ButtonComponent)`
   font-size: 1.25rem;
+
+  @media ${media.max.medium} {
+    font-size: 1rem;
+  }
 `
 
 export {

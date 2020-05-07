@@ -13,14 +13,14 @@ const Manifest = () => {
           <Title>Manifesto</Title>
           <Text>
             Através do trabalho organizado e colaborativo entre profissionais,
-            academicos, cientistas, empresas, instituições públicas, privadas e
+            acadêmicos, cientistas, empresas, instituições públicas, privadas e
             o governo, acreditamos que podemos{` `}
             <b>
               auxiliar o Setor da Saúde e combater a epidemia de COVID-19 no
               Brasil e no Mundo
             </b>
             , através de Tecnologias emergentes e uma rede de colaboradores.
-            Acreditamos que que as ações da Rede Brasil contra o Vírus têm a
+            Acreditamos que as ações da rede Brasil contra o Vírus têm a
             capacidade de alterar a maneira como
             <b> cientistas, empresas, makers e o poder público </b>
             se relacionam a fim de equacionar as demandas da sociedade

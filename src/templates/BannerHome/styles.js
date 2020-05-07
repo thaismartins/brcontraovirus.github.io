@@ -59,6 +59,7 @@ const Button = styled(ButtonComponent)`
 
   @media ${media.max.medium} {
     margin-bottom: 1rem;
+    font-size: 1rem;
   }
 `
 

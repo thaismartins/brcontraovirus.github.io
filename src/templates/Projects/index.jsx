@@ -25,7 +25,7 @@ const Projetcs = () => {
       <Center>
         <Title>Projetos</Title>
         <Text>
-          Soluções opensource para auxiliar o Sistema de Saúde Brasileiro
+          Soluções open-source para auxiliar o Sistema de Saúde Brasileiro
           durante a crise do COVID-19
         </Text>
 
