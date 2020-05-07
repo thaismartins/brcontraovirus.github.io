@@ -1,28 +1,54 @@
 const items = [
   {
-    title: 'Sobre',
-    link: '/sobre',
+    title: 'Home',
+    link: '/#topo',
+    external: false,
   },
   {
-    title: 'Projeto',
-    link: '/projeto',
+    title: 'A Iniciativa',
+    link: '/#ciclo-solidario',
+    external: false,
   },
   {
-    title: 'Voluntários',
-    link: '/voluntarios',
+    title: 'Projetos',
+    link: '/#projetos',
+    external: false,
   },
   {
-    title: 'Apoio',
-    link: '/apoio',
+    title: 'Reportagens',
+    link: '/#reportagens',
+    external: false,
   },
   {
-    title: 'Contato',
-    link: '/contato',
+    title: 'Depoimentos',
+    link: '#depoimentos',
+    external: false,
+  },
+  {
+    title: 'Nossa equipe',
+    link: '/#equipe',
+    external: false,
+  },
+  {
+    title: 'Junte-se a Nós',
+    link: '#faca-parte',
+    external: false,
+  },
+  {
+    title: 'Apoiadores',
+    link: '/#apoio',
+    external: false,
   },
   {
     title: 'Vakinha',
     link:
       'https://sharity.com.br/brasil-contra-o-virus-em-sp---epis-para-os-hospitais?u=ca11b8567b8c11eabd100a536da30ee4sobre',
+    external: true,
+  },
+  {
+    title: 'Contato',
+    link: '/#contato',
+    external: false,
   },
 ]
 

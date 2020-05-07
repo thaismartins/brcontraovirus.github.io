@@ -7,7 +7,7 @@ import { Container, Title, Text } from './styles'
 
 const Manifest = () => {
   return (
-    <Container>
+    <Container id='manifesto'>
       <Background color='darkPurple' full>
         <Center>
           <Title>Manifesto</Title>

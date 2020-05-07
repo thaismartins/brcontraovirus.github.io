@@ -2,25 +2,48 @@ import React, { useState } from 'react'
 
 import Center from '@components/Center'
 import Image from '@components/Image'
+import Vakinha from '@components/Vakinha'
+import Social from '@components/Social'
 import MenuHamburger from '@components/MenuHamburger'
 import Menu from '@components/Menu'
 
-import { Container, Logo } from './styles'
+import {
+  Container,
+  MenuHeader,
+  Logo,
+  Right,
+  Socials,
+  MenuContent,
+} from './styles'
 
 const Header = () => {
   const [open, setOpen] = useState(false)
 
   return (
     <Container open={open}>
-      <Center>
-        <Logo>
-          <Image src='logo.png' alt='Brasil contra o Vírus' />
-        </Logo>
+      <MenuHeader>
+        <Center>
+          <Logo to='/'>
+            <Image src='logo.png' alt='Brasil contra o Vírus' />
+          </Logo>
 
-        <MenuHamburger toogleOpen={setOpen} open={open} />
+          <Right>
+            <Vakinha hoverColor='green' />
 
-        <Menu open={open} />
-      </Center>
+            <Socials>
+              <Social type='facebook' hoverColor='green' />
+              <Social type='twitter' hoverColor='green' />
+              <Social type='instagram' hoverColor='green' />
+            </Socials>
+
+            <MenuHamburger toogleOpen={setOpen} open={open} />
+          </Right>
+        </Center>
+      </MenuHeader>
+
+      <MenuContent>
+        <Menu open={open} setOpen={setOpen} />
+      </MenuContent>
     </Container>
   )
 }

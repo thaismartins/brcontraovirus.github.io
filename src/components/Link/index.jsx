@@ -16,7 +16,11 @@ const Link = ({ to, children, blank, className }) => (
       </Container>
     )}
 
-    {!blank && <Container href={to}>{children}</Container>}
+    {!blank && (
+      <Container href={to} className={className}>
+        {children}
+      </Container>
+    )}
   </>
 )
 

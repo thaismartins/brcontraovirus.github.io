@@ -11,6 +11,7 @@ const Container = styled.div`
   cursor: pointer;
   padding: 0;
   z-index: 10;
+  margin: 0 1rem;
 
   &:focus {
     outline: none;

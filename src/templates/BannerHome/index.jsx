@@ -7,7 +7,7 @@ import { Container, Content, Title, Subtitle, Buttons, Button } from './styles'
 
 const BannerHome = () => {
   return (
-    <Container>
+    <Container id='topo'>
       <Background image='banner.jpg' alt='Brasil contra o Vírus' full>
         <Center>
           <Content>

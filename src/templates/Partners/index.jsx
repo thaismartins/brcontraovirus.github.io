@@ -21,7 +21,7 @@ const color = 'pink'
 
 const Partners = () => {
   return (
-    <Container>
+    <Container id='apoio'>
       <Title>Apoio e Gratidão</Title>
       <PageBlock color={color} border>
         <Center>
