@@ -1,16 +1,13 @@
-const links = [
-  {
-    type: 'twitter',
+const links = {
+  twitter: {
     href: 'https://twitter.com/bracontraovirus',
   },
-  {
-    type: 'facebook',
+  facebook: {
     href: 'https://www.facebook.com/brcontraovirus/',
   },
-  {
-    type: 'instagram',
+  instagram: {
     href: 'https://www.instagram.com/brcontraovirus/',
   },
-]
+}
 
 export default links
