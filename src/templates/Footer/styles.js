@@ -3,6 +3,8 @@ import media from '@layouts/media'
 
 import WhatsappIcon from '@images/icons/whatsapp.svg'
 
+import Link from '@components/Link'
+
 const Container = styled.footer`
   width: 100%;
   margin-top: 2rem;
@@ -42,7 +44,7 @@ const Address = styled.div`
   border-bottom: 1px solid ${({ theme }) => theme.colors.dark};
 `
 
-const Email = styled.a`
+const Email = styled(Link)`
   padding: 0.75rem 0;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dark};
   display: block;
@@ -77,4 +79,14 @@ const Phones = styled.div`
 
 const Phone = styled.div``
 
-export { Container, Logo, Details, Address, Email, Phones, Phone }
+const Socials = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media ${media.max.small} {
+    justify-content: center;
+  }
+`
+
+export { Container, Logo, Details, Address, Email, Phones, Phone, Socials }

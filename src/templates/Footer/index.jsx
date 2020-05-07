@@ -2,7 +2,7 @@ import React from 'react'
 
 import Center from '@components/Center'
 import Image from '@components/Image'
-import Socials from '@components/Socials'
+import Social from '@components/Social'
 
 import {
   Container,
@@ -12,11 +12,12 @@ import {
   Email,
   Phones,
   Phone,
+  Socials,
 } from './styles'
 
 const Header = () => {
   return (
-    <Container>
+    <Container id='contato'>
       <Center>
         <Logo>
           <Image src='logo.png' alt='Brasil contra o Vírus' />
@@ -35,7 +36,12 @@ const Header = () => {
             <Phone>+55 11 99136 2636</Phone>
             <Phone>+55 11 97281 1999</Phone>
           </Phones>
-          <Socials />
+
+          <Socials>
+            <Social type='facebook' />
+            <Social type='twitter' />
+            <Social type='instagram' />
+          </Socials>
         </Details>
       </Center>
     </Container>
