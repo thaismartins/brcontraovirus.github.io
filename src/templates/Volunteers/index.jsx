@@ -13,7 +13,7 @@ import { Container, Title, Teams, Team, Button } from './styles'
 
 const Volunteers = () => {
   return (
-    <Container>
+    <Container id='equipe'>
       <Title>Voluntários</Title>
       <PageBlock title='Nossa Liderança' color='purple'>
         <Center>
