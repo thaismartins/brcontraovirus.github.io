@@ -1,31 +1,53 @@
 // import React, { useEffect } from 'react'
 import React from 'react'
 import PropTypes from 'prop-types'
+import { navigate } from 'gatsby'
 
-import Button from '@components/Button'
+import Social from '@components/Social'
 
 import items from './items'
 
-import { Items, Item } from './styles'
+import { Items, Container, Item, Link, Socials } from './styles'
 
-const Header = ({ open }) => {
+const Menu = ({ open, setOpen }) => {
+  const goToLink = (e, item) => {
+    e.preventDefault()
+    setOpen(false)
+
+    if (item.external) {
+      window.open(item.link, '_blank').focus()
+      return
+    }
+
+    navigate(item.link)
+  }
+
   return (
-    <Items open={open}>
-      {items.map((item, index) => (
-        <Item key={index}>
-          <Button to={item.link}>{item.title}</Button>
-        </Item>
-      ))}
-    </Items>
+    <Container>
+      <Items open={open}>
+        {items.map((item, index) => (
+          <Item key={index}>
+            <Link onClick={e => goToLink(e, item)}>{item.title}</Link>
+          </Item>
+        ))}
+      </Items>
+
+      <Socials open={open}>
+        <Social type='facebook' color='white' hoverColor='green' />
+        <Social type='twitter' color='white' hoverColor='green' />
+        <Social type='instagram' color='white' hoverColor='green' />
+      </Socials>
+    </Container>
   )
 }
 
-Header.propTypes = {
+Menu.propTypes = {
+  setOpen: PropTypes.func.isRequired,
   open: PropTypes.bool,
 }
 
-Header.defaultProps = {
+Menu.defaultProps = {
   open: false,
 }
 
-export default Header
+export default Menu

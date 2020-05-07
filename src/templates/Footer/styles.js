@@ -83,6 +83,7 @@ const Socials = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-top: 1rem;
 
   @media ${media.max.small} {
     justify-content: center;
