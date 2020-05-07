@@ -11,7 +11,7 @@ import headlines from './headlines'
 
 const Press = () => {
   return (
-    <Container>
+    <Container id='reportagens'>
       <Title>Reportagens</Title>
       <PageBlock color='green' border>
         <Center>
