@@ -1,6 +1,8 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link as GatsbyLink } from 'gatsby'
 import PropTypes from 'prop-types'
+
+import Link from '@components/Link'
 
 import { Container } from './styles'
 
@@ -26,12 +28,12 @@ const Button = ({
     className={className}
   >
     {blank && (
-      <a href={to} target='_blank' rel='noopener noreferrer'>
+      <Link href={to} blank>
         {children}
-      </a>
+      </Link>
     )}
 
-    {!blank && <Link to={to}>{children}</Link>}
+    {!blank && <GatsbyLink to={to}>{children}</GatsbyLink>}
   </Container>
 )
 
