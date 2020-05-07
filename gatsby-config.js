@@ -7,6 +7,13 @@ module.exports = {
     author: `@bracontraovirus`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-165310280-1',
+        head: true,
+      },
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
