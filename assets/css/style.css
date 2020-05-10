@@ -994,6 +994,12 @@ section {
   height: relative;
 }
 
+.apoio .parceiro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
