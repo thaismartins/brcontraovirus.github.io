@@ -87,6 +87,10 @@ const partners = [
     title: 'Cutmaker',
     image: 'partners/cutmaker.png',
   },
+  {
+    title: 'BrazilJS',
+    image: 'partners/braziljs.png',
+  },
 ]
 
 export default partners
