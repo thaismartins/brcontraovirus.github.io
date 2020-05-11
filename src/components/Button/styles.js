@@ -7,6 +7,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  cursor: pointer;
 
   ${({ center }) =>
     center &&
@@ -45,9 +46,11 @@ const Container = styled.div`
     background: ${theme.buttons[color].background};
   `};
 
-  a {
+  a,
+  button {
     color: ${({ theme, color }) => theme.colors[color]};
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,6 +58,7 @@ const Container = styled.div`
     border: 1px solid transparent;
     font-weight: 700;
     text-align: center;
+    cursor: pointer;
 
     ${({ circle }) =>
       !circle &&

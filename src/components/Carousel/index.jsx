@@ -15,15 +15,23 @@ const Carousel = ({
   slidesToShow,
   slidesToScroll,
   color,
+  full,
 }) => {
-  const configs = {
-    ...settings,
+  let configs = {
+    ...settings.standard,
     dots,
     arrows,
     slidesToShow,
     slidesToScroll,
     prevArrow: <PrevArrow color={color} />,
     nextArrow: <NextArrow color={color} />,
+  }
+
+  if (full) {
+    configs = {
+      ...configs,
+      ...settings.full,
+    }
   }
 
   return (
@@ -40,6 +48,7 @@ Carousel.propTypes = {
   color: PropTypes.string,
   dots: PropTypes.bool,
   arrows: PropTypes.bool,
+  full: PropTypes.bool,
 }
 
 Carousel.defaultProps = {
@@ -48,6 +57,7 @@ Carousel.defaultProps = {
   color: 'purple',
   dots: false,
   arrows: false,
+  full: false,
 }
 
 export default Carousel

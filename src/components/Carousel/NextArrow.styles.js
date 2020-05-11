@@ -18,7 +18,10 @@ const Container = styled.div`
     mask-repeat: no-repeat;
     mask-size: contain;
     mask-position: center;
-    background: ${({ theme, color }) => theme.colors.gradients[color]};
+    background: ${({ theme, color }) =>
+      theme.colors.gradients[color]
+        ? theme.colors.gradients[color]
+        : theme.colors[color]};
   }
 `
 
