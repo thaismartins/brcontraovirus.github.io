@@ -19,7 +19,7 @@ const Container = styled.div`
   }
 
   .slick-track {
-    height: auto;
+    height: 100%;
     overflow: hidden;
     display: flex;
   }

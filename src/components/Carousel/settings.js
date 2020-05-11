@@ -1,4 +1,4 @@
-const settings = {
+const standard = {
   dots: false,
   arrows: false,
   infinite: true,
@@ -40,4 +40,25 @@ const settings = {
   ],
 }
 
-export default settings
+const full = {
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  respondTo: 'slider',
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        swipeToSlide: true,
+        dots: true,
+        arrows: false,
+      },
+    },
+  ],
+}
+
+export default {
+  standard,
+  full,
+}
