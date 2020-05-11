@@ -17,6 +17,7 @@ const Button = ({
   center,
   blank,
   className,
+  onClick,
 }) => (
   <Container
     link={link}
@@ -27,19 +28,26 @@ const Button = ({
     center={center}
     className={className}
   >
-    {blank && (
+    {onClick && to === '' && (
+      <button type='button' onClick={onClick}>
+        {children}
+      </button>
+    )}
+
+    {blank && to !== '' && (
       <Link href={to} blank>
         {children}
       </Link>
     )}
 
-    {!blank && <GatsbyLink to={to}>{children}</GatsbyLink>}
+    {!blank && to !== '' && <GatsbyLink to={to}>{children}</GatsbyLink>}
   </Container>
 )
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
-  to: PropTypes.string.isRequired,
+  to: PropTypes.string,
+  onClick: PropTypes.func,
   link: PropTypes.bool,
   rounded: PropTypes.bool,
   circle: PropTypes.bool,
@@ -51,6 +59,7 @@ Button.propTypes = {
 }
 
 Button.defaultProps = {
+  to: '',
   link: false,
   rounded: false,
   circle: false,
@@ -59,6 +68,7 @@ Button.defaultProps = {
   blank: false,
   className: '',
   color: 'green',
+  onClick: () => {},
 }
 
 export default Button
