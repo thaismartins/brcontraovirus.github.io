@@ -43,6 +43,7 @@ const standard = {
 const full = {
   slidesToShow: 1,
   slidesToScroll: 1,
+  initialSlide: 0,
   respondTo: 'slider',
   responsive: [
     {
