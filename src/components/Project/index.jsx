@@ -1,54 +1,79 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Button from '@components/Button'
 import Image from '@components/Image'
+import Gallery from '@components/Gallery'
 
 import {
   Container,
   ImageWrapper,
   ButtonsWrapper,
   Buttons,
+  Button,
+  PlusButton,
+  LinkButton,
+  Details,
   Title,
   Category,
 } from './styles'
 
-const Project = ({ image, title, category, show, color, className }) =>
+const Project = ({
+  images,
+  title,
+  category,
+  show,
+  color,
+  className,
+  open,
+  setOpen,
+  setClose,
+}) =>
   show ? (
-    <Container color={color} className={className}>
-      <ImageWrapper>
-        <Image src={image} alt={title} fit='cover' />
-        <ButtonsWrapper color={color}>
-          <Buttons>
-            <Button color='whiteYellow' circle to='/'>
-              <Image src='plus-orange.svg' alt='teste' />
-            </Button>
-            <Button color='whiteYellow' circle to='/'>
-              <Image src='link-orange.svg' alt='teste' />
-            </Button>
-          </Buttons>
-        </ButtonsWrapper>
-      </ImageWrapper>
-      <Title>{title}</Title>
-      <Category>{category}</Category>
-    </Container>
+    <>
+      <Container color={color} className={className}>
+        <ImageWrapper>
+          <Image src={images[0]} alt={title} fit='cover' />
+
+          <ButtonsWrapper color={color}>
+            <Buttons>
+              <Button color='whiteYellow' onClick={setOpen} circle>
+                <PlusButton />
+              </Button>
+              <Button color='whiteYellow' circle to='/'>
+                <LinkButton />
+              </Button>
+            </Buttons>
+          </ButtonsWrapper>
+        </ImageWrapper>
+        <Details>
+          <Title>{title}</Title>
+          <Category>{category}</Category>
+        </Details>
+      </Container>
+
+      <Gallery images={images} title={title} open={open} setClose={setClose} />
+    </>
   ) : (
     ''
   )
 
 Project.propTypes = {
-  image: PropTypes.string.isRequired,
+  images: PropTypes.arrayOf(PropTypes.string).isRequired,
   title: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
+  setOpen: PropTypes.func.isRequired,
+  setClose: PropTypes.func.isRequired,
   color: PropTypes.string,
   className: PropTypes.string,
   show: PropTypes.bool,
+  open: PropTypes.bool,
 }
 
 Project.defaultProps = {
   color: 'orange',
   className: '',
   show: true,
+  open: false,
 }
 
 export default Project
