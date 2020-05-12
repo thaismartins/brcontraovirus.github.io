@@ -11,6 +11,10 @@ const categories = [
     title: 'Manutenção',
     type: 'manutencao',
   },
+  {
+    title: 'Testes',
+    type: 'testes',
+  },
 ]
 
 export default categories

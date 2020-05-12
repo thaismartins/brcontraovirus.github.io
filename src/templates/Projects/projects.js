@@ -27,6 +27,24 @@ const projects = [
     ],
   },
   {
+    title: 'Teste Imuno-Rápido COVID-19 IgG/IgM',
+    category: 'Testes',
+    categoryType: 'testes',
+    images: ['projects/teste-rapido/teste.png'],
+  },
+  {
+    title: 'Máscara de proteção tripla',
+    category: 'EPI',
+    categoryType: 'epis',
+    images: [
+      'projects/mascara-tripla/mascara.jpeg',
+      'projects/mascara-tripla/mascara-2.jpeg',
+      'projects/mascara-tripla/mascara-3.jpg',
+      'projects/mascara-tripla/mascara-4.jpg',
+      'projects/mascara-tripla/mascara-5.jpg',
+    ],
+  },
+  {
     title: 'Divisor de Ventilador',
     category: 'Dispositivos',
     categoryType: 'dispositivos',
