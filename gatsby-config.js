@@ -26,6 +26,12 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://brcontraovirus.org`,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `@images`,
