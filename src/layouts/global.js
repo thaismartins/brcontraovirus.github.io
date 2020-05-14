@@ -19,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
     width: 100vw;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
   }
   
   html,

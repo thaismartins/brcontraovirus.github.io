@@ -71,7 +71,7 @@ const Container = styled.div`
     ${({ theme, color }) =>
       color &&
       `
-      background-color: ${theme.buttons[color].color};
+      background-color: ${theme.colors[color]};
       background-image: ${theme.buttons[color].color};
       background-size: 100%;
       -webkit-background-clip: text;
