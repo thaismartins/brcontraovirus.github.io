@@ -8,6 +8,15 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `green`,
+        showSpinner: true,
+        trickle: false,
+        minimum: 0.4,
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: 'UA-165310280-1',
