@@ -1,4 +1,10 @@
 import styled from 'styled-components'
+import media from '@layouts/media'
+
+import ButtonComponent from '@components/Button'
+
+import PlusIcon from '@images/icons/plus.svg'
+import LinkIcon from '@images/icons/link.svg'
 
 const Container = styled.div`
   width: 100%;
@@ -13,7 +19,6 @@ const Container = styled.div`
 const ImageWrapper = styled.div`
   height: 13rem;
   overflow: hidden;
-  margin-bottom: 2rem;
   position: relative;
 
   .gatsby-image-wrapper {
@@ -60,16 +65,64 @@ const Buttons = styled.div`
   z-index: 1;
 `
 
+const PlusButton = styled.span`
+  width: 1.5rem;
+  height: 1.5rem;
+  mask-image: url(${PlusIcon});
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background: ${({ theme }) => theme.colors.gradients.orange};
+`
+
+const LinkButton = styled.span`
+  width: 1.5rem;
+  height: 1.5rem;
+  mask-image: url(${LinkIcon});
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background: ${({ theme }) => theme.colors.gradients.orange};
+`
+
+const Button = styled(ButtonComponent)`
+  &:hover {
+    ${LinkButton},
+    ${PlusButton} {
+      background: ${({ theme }) => theme.colors.white};
+    }
+  }
+`
+
+const Details = styled.div`
+  margin: 2rem 1rem;
+
+  @media ${media.max.medium} {
+    margin: 1rem;
+  }
+`
+
 const Title = styled.p`
   font-size: 1.25rem;
   font-weight: 700;
   color: ${({ theme }) => theme.colors.dark};
-  margin-bottom: 0.5rem;
+  margin: 0 0 0.5rem;
 `
 
 const Category = styled.p`
   color: ${({ theme }) => theme.colors.gray};
-  margin-bottom: 2rem;
+  margin: 0;
 `
 
-export { Container, ImageWrapper, ButtonsWrapper, Buttons, Title, Category }
+export {
+  Container,
+  ImageWrapper,
+  ButtonsWrapper,
+  Buttons,
+  Button,
+  PlusButton,
+  LinkButton,
+  Details,
+  Title,
+  Category,
+}

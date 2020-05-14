@@ -88,8 +88,15 @@ const Carousel = styled(CarouselComponent)``
 const ImageWrapper = styled.div`
   width: 100%;
   max-width: 60rem;
+  max-height: 90vh;
   display: block !important;
   margin: auto;
+
+  .gatsby-image-wrapper {
+    width: 100%;
+    height: 100%;
+    display: contents;
+  }
 `
 
 export { Container, Wrapper, Carousel, ImageWrapper, Close }

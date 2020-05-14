@@ -19,6 +19,17 @@ import {
 
 const Projetcs = () => {
   const [activeCategory, setActiveCategory] = useState('')
+  const [activeProject, setActiveProject] = useState('')
+
+  const setCloseProject = e => {
+    e.preventDefault()
+    setActiveProject('')
+  }
+
+  const setOpenProject = (e, project) => {
+    e.preventDefault()
+    setActiveProject(project)
+  }
 
   return (
     <Container id='projetos'>
@@ -52,15 +63,18 @@ const Projetcs = () => {
             <Project
               key={index}
               show={activeCategory === project.categoryType || !activeCategory}
-              image={project.images[0]}
+              images={project.images}
               title={project.title}
               category={project.category}
+              open={activeProject === index}
+              setOpen={e => setOpenProject(e, index)}
+              setClose={setCloseProject}
             />
           ))}
         </Projects>
 
         <Buttons>
-          <Button to='/' color='orange' uppercase rounded>
+          <Button to='#contato' color='orange' uppercase rounded>
             Compartilhe seu Projeto
           </Button>
         </Buttons>
