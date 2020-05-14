@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import ArrowRight from '@images/icons/arrow-right.png'
 
-const Container = styled.div`
+const Container = styled.span`
   width: 3rem;
   height: 4rem;
   position: absolute;
