@@ -8,6 +8,15 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `green`,
+        showSpinner: true,
+        trickle: false,
+        minimum: 0.4,
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: 'UA-165310280-1',
@@ -16,6 +25,12 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://brcontraovirus.org`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -49,6 +64,18 @@ module.exports = {
           },
         ],
         display: 'swap',
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Brasil contra o Vírus`,
+        short_name: `Brasil contra o Vírus`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#47bb8e`,
+        icon: `src/images/favicon.png`,
+        display: `standalone`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

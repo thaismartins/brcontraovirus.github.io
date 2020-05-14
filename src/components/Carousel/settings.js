@@ -6,7 +6,7 @@ const standard = {
   slidesToShow: 3,
   slidesToScroll: 1,
   initialSlide: 1,
-  lazyLoad: true,
+  lazyLoad: false,
   responsive: [
     {
       breakpoint: 1024,

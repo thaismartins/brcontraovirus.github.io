@@ -19,8 +19,8 @@ const Gallery = ({ open, setClose, images, title }) => (
               alt={title}
               fit='contain'
               style={{
-                width: '100%',
-                height: '100%',
+                width: '90%',
+                height: '90%',
                 margin: 'auto',
                 right: 0,
                 bottom: 0,
