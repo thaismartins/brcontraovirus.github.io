@@ -66,6 +66,18 @@ module.exports = {
         display: 'swap',
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Brasil contra o Vírus`,
+        short_name: `Brasil contra o Vírus`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#47bb8e`,
+        icon: `src/images/favicon.png`,
+        display: `standalone`,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
