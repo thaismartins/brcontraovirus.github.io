@@ -69,7 +69,7 @@ const MakePart = () => {
             </Block>
 
             <Block>
-              <Subtitle>Quero ajuda</Subtitle>
+              <Subtitle>Quero ajudar</Subtitle>
               <Text>
                 Ajude a produzir EPIs para os profissionais que devemos proteger
                 ou contribua com uma doação monetária.
