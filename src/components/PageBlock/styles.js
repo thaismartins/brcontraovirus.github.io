@@ -46,7 +46,7 @@ const Content = styled.div`
   }
 
   @media ${media.max.medium} {
-    top: -1.8rem;
+    top: -1.6rem;
   }
 `
 

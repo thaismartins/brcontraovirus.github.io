@@ -21,6 +21,10 @@ const Container = styled.div`
     z-index: 0;
     display: ${({ border }) => (border ? 'block' : 'none')};
 
+    @media ${media.max.medium} {
+      width: 100%;
+    }
+
     ${({ theme, color }) =>
       color &&
       `
