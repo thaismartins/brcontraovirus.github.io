@@ -16,6 +16,11 @@ const Content = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  padding: ${({ full }) => (full ? '0' : '4rem 0')};
+
+  @media ${media.max.medium} {
+    padding: ${({ full }) => (full ? '0' : '2rem 0')};
+  }
 `
 
 const Title = styled.h1`
@@ -27,6 +32,7 @@ const Title = styled.h1`
 
   @media ${media.max.medium} {
     font-size: 3rem;
+    line-height: 3rem;
   }
 `
 

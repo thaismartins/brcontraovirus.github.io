@@ -15,7 +15,7 @@ const numbers = [
     icon: 'printer.png',
   },
   {
-    number: 1352,
+    number: 3475,
     description: 'Doações',
     icon: 'heart.png',
   },
