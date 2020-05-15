@@ -1,16 +1,17 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import Center from '@components/Center'
 import Background from '@components/Background'
 
 import { Container, Content, Title, Subtitle, Buttons, Button } from './styles'
 
-const BannerHome = () => {
+const Banner = ({ full }) => {
   return (
     <Container id='topo'>
-      <Background image='banner.jpg' alt='Brasil contra o Vírus' full>
+      <Background image='banner.jpg' alt='Brasil contra o Vírus' full={full}>
         <Center>
-          <Content>
+          <Content full={full}>
             <Title>Brasil contra o Vírus</Title>
 
             <Subtitle>
@@ -32,4 +33,12 @@ const BannerHome = () => {
   )
 }
 
-export default BannerHome
+Banner.propTypes = {
+  full: PropTypes.bool,
+}
+
+Banner.defaultProps = {
+  full: false,
+}
+
+export default Banner

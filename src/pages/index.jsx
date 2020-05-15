@@ -4,7 +4,7 @@ import Layout from '@layouts/Default'
 
 import SEO from '@components/SEO'
 
-import BannerHome from '@templates/BannerHome'
+import Banner from '@templates/Banner'
 import Numbers from '@templates/Numbers'
 import Manifest from '@templates/Manifest'
 import Projects from '@templates/Projects'
@@ -18,7 +18,7 @@ import Partners from '@templates/Partners'
 const IndexPage = () => (
   <Layout>
     <SEO title='Home' />
-    <BannerHome />
+    <Banner full />
     <Numbers />
     <Manifest />
     <Projects />
