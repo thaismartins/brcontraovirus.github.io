@@ -1,0 +1,239 @@
+[
+  {
+    "title": "Faceshield - Impressão 3D",
+    "slug": "faceshield",
+    "category": "EPI",
+    "categoryType": "epis",
+    "images": [
+      "projects/faceshield-3d/faceshield.jpg",
+      "projects/faceshield-3d/faceshield-2.jpg"
+    ],
+    "technology": "Impressão 3D FDM e Laser CO2/Plotter/CNC",
+    "materials": "PETG/ABS/PLA para impressão e PET/PETG/PVC/PVA para o visor",
+    "downloads": [
+      "https://drive.google.com/drive/u/1/folders/1LHu5FR8NmOaTzAlJHKPpEDni92rKlkoN"
+    ],
+    "designers": "Fernando Simões, Felipe Simões, Lucas \"IMO3D\" Regadas, Mario Diniz e Renato O. M. de Castro",
+    "details": "Este modelo foi estudado e otimizado por nossa equipe multidisciplinar, com base nisso apresentamos aqui procedimentos de produção e limpeza, para utilização com segurança.",
+    "procedures": {
+      "makers": [
+        {
+          "title": "Antes de TUDO",
+          "icon": "icons/bed.png",
+          "text": "Use luvas e máscara para manusear as peças. Não ajude a espalhar mais a infecção. Caso tenha sintomas gripais, evite a fabricação."
+        },
+        {
+          "title": "Impressão 3D",
+          "icon": "icons/bed.png",
+          "text": "PETG, ABS, PA, TRITAN ou PLA. O PETG suporta melhor a desinfeção química no Hospital. Não use EVA pois é dificil a desinfecção no hospital."
+        },
+        {
+          "title": "Corte da Placa",
+          "icon": "icons/bed.png",
+          "text": "O visor pode ser cortado no laser com PET/PETG, na plotter e na CNC com PVA/PET/PETG/PVC. O PET/PETG suporta melhor a desinfeção química no Hospital"
+        },
+        {
+          "title": "Limpeza e Armazenamento",
+          "icon": "icons/bed.png",
+          "text": "Lave as peças com água, sabão e cloro. Pode-se utilizar Álcool 70%. Guarde em um saco plástico transparente."
+        }
+      ],
+      "hospitals": [
+        {
+          "title": "Antes de TUDO",
+          "icon": "icons/bed.png",
+          "text": "Desembale o kit e lave tudo com Solução Hipoclorito/Clorexidina. Limpar apenas com alcool 70% ou isopropilico não garante a desinfecção das microfissuras provenientes da impressão 3D."
+        },
+        {
+          "title": "Montagem",
+          "icon": "icons/bed.png",
+          "text": "Encaixe a folha de PET ou Acetato transparente por dentro do arco, após isso, encaixe a liga elástica nos pinos acima da orelha. Esse vídeo mostra como montar <a href='https://drive.google.com/file/d/1NIzgziMPRbh7R3bBqBiaVS5QFae1u8Zt/view' target='_blank'>abre.ai/faceshield</a>."
+        },
+        {
+          "title": "Reutilização",
+          "icon": "icons/bed.png",
+          "text": "O dispositivo deve ser obrigatóriamente higienizado a cada 12h. Após uso diário, limpe o conjunto com Solução Hipoclorito/Cloxedina. Evite utilizar só álcool."
+        },
+        {
+          "title": "Atenção",
+          "icon": "icons/bed.png",
+          "text": "Este equipamento destina-se exclusivamente para uso emergencial, podendo sofrer alterações durante a pandemia de COVID-19. É uma proteção de uso individual."
+        }
+      ]
+    }
+  },
+  {
+    "title": "Faceshield - LASER/CNC",
+    "slug": "faceshield-laser",
+    "category": "EPI",
+    "categoryType": "epis",
+    "images": [
+      "projects/faceshield-laser/faceshield.jpg",
+      "projects/faceshield-laser/faceshield-2.jpg"
+    ],
+    "technology": "Laser CO2/Plotter/CNC",
+    "materials": "PET/PETG/PVC/PVA",
+    "downloads": ["http://abre.ai/brcv-faceshield-laser"],
+    "designers": "Arnaldo Kubo, Renato Boschilia Jr e Wanderley Balsalobre",
+    "details": "Este modelo foi estudado e otimizado por nossa equipe multidisciplinar, com base nisso apresentamos aqui procedimentos de produção e limpeza, para utilização com segurança.",
+    "procedures": {
+      "makers": [
+        {
+          "title": "Antes de TUDO",
+          "icon": "icons/bed.png",
+          "text": "Use luvas e máscara para manusear as peças. Não ajude a espalhar mais a infecção. Caso tenha sintomas gripais, evite a fabricação."
+        },
+        {
+          "title": "Corte da Placa",
+          "icon": "icons/bed.png",
+          "text": "As peças podem ser cortadas no laser com PET/PETG, na plotter e na CNC com PVA/PET/PETG/PVC. O PET/PETG suporta melhor a desinfeção química no Hospital"
+        },
+        {
+          "title": "Limpeza e Armazenamento",
+          "icon": "icons/bed.png",
+          "text": "Lave as peças com água, sabão e cloro. Pode-se utilizar Álcool 70%. Guarde em um saco plástico transparente."
+        }
+      ],
+      "hospitals": [
+        {
+          "title": "Antes de TUDO",
+          "icon": "icons/bed.png",
+          "text": "Desembale o kit e lave tudo com Solução Hipoclorito/Clorexidina. Limpar apenas com alcool 70% ou isopropilico não garante a desinfecção das microfissuras provenientes da impressão 3D."
+        },
+        {
+          "title": "Montagem",
+          "icon": "icons/bed.png",
+          "text": "Encaixe a folha de PET ou Acetato transparente por dentro do arco, após isso, encaixe a liga elástica nos pinos acima da orelha. Esse vídeo mostra como montar <a href='https://abre.ai/faceshield' target='blank'>abre.ai/faceshield</a>."
+        },
+        {
+          "title": "Reutilização",
+          "icon": "icons/bed.png",
+          "text": "O dispositivo deve ser obrigatóriamente higienizado a cada 12h. Após uso diário, limpe o conjunto com Solução Hipoclorito/Cloxedina. Evite utilizar só álcool."
+        },
+        {
+          "title": "Atenção",
+          "icon": "icons/bed.png",
+          "text": "Este equipamento destina-se exclusivamente para uso emergencial, podendo sofrer alterações durante a pandemia de COVID-19. É uma proteção de uso individual."
+        }
+      ]
+    }
+  },
+  {
+    "title": "Videolaringoscopio",
+    "slug": "videolaringoscopio",
+    "category": "Manutenção",
+    "categoryType": "manutencao",
+    "images": [
+      "projects/videolaringoscopio/videolaringo.jpg",
+      "projects/videolaringoscopio/videolaringo-2.jpg"
+    ],
+    "technology": "Impressão 3D DLP ou SLA",
+    "materials": "Resina para Guia Cirúrgica",
+    "downloads": ["http://abre.ai/brcv-videolaringo"],
+    "designers": "Air Angel",
+    "details": "Este modelo esta sendo estudado e otimizado por nossa equipe multidisciplinar, com base nisso apresentamos aqui procedimentos de produção e limpeza, para utilização com segurança.",
+    "procedures": {
+      "makers": [
+        {
+          "title": "Antes de TUDO",
+          "icon": "icons/bed.png",
+          "text": "Use luvas e máscara para manusear as peças. Não ajude a espalhar mais a infecção. Caso tenha sintomas gripais, evite a fabricação."
+        },
+        {
+          "title": "Impressão 3D",
+          "icon": "icons/bed.png",
+          "text": "Utilize resina biocompatível para guia cirurgica com registro na ANVISA Classe I ou II, que comporte o processo de autoclave. Além da biocompatibilidade, essa processo permite estanquiedade"
+        },
+        {
+          "title": "Limpeza e Armazenamento",
+          "icon": "icons/bed.png",
+          "text": "Lave as peças com água, sabão e cloro. Pode-se utilizar Álcool 70%. Guarde em um saco plástico transparente."
+        }
+      ],
+      "hospitals": [
+        {
+          "title": "Antes de TUDO",
+          "icon": "icons/bed.png",
+          "text": "Desembale o kit e limpe em processo de autoclave à 120 °C, també pode ser higienizado com Solução Hipoclorito/Cloxedina."
+        },
+        {
+          "title": "Reutilização",
+          "icon": "icons/bed.png",
+          "text": "O dispositivo deve ser obrigatóriamente higienizado. Pode-se utilizar autoclave ou Solução Hipoclorito/Cloxedina."
+        },
+        {
+          "title": "Atenção",
+          "icon": "icons/bed.png",
+          "text": "Este equipamento destina-se exclusivamente para uso emergencial, podendo sofrer alterações durante a pandemia de COVID-19."
+        }
+      ]
+    }
+  },
+  {
+    "title": "Teste Imuno-Rápido COVID-19 IgG/IgM",
+    "slug": "teste-rapido",
+    "category": "Testes",
+    "categoryType": "testes",
+    "images": ["projects/teste-rapido/teste.png"],
+    "details": "A Rede Brasil contra o Vírus avaliou os testes disponíveis no mercado e elegeu um parceiro, Laboratório e Indústria Farmacêutica nacional, especializado em diagnósticos laboratoriais. <br /> <br /> Um dos meios mais eficazes de combate à COVID19, é a testagem em massa da população, trabalhadores e Profissionais da Saúde, com a consequente segregação e tratamento dos infectados e a diminuição do risco de contágio. <br /> <br />Nosso objetivo é angariar recursos para produzir Testes Imuno-Rápido e doar para hospitais públicos e os profissionais que combatem a Pandemia. <br /> <br /> Como ajudar? <a href='https://sharity.com.br/testes-de-imunidade-rapidos-covid19---hospitais?u=f94307a193db11eab3760a64e40af16e' target='blank'>https: //sharity.com.br/testes-de-imunidade-rapidos-covid19---hospitais</a> <br /> <br />O Imuno-Rápido COVID-19 IgG/IgM é um kit para determinação rápida, qualitava e diferencial de anticorpos IgG e IgM contra coronavírus (SARS-CoV-2). <br /> <br /> O kit utiliza a metodologia imunocromatográfica, possibilitando a determinação das fases aguda, convalescente e pregressa da COVID-19. <br /> <br />Uso profissional. Não automatizado. Somente para uso diagnóstico in vitro.",
+    "downloads": [
+      "./public/pdfs/teste-rapido/ficha.pdf",
+      "./public/pdfs/teste-rapido/flyer.pdf"
+    ]
+  },
+  {
+    "title": "Máscara de proteção tripla",
+    "slug": "mascara-tripla",
+    "category": "EPI",
+    "categoryType": "epis",
+    "images": [
+      "projects/mascara-tripla/mascara.jpeg",
+      "projects/mascara-tripla/mascara-2.jpeg",
+      "projects/mascara-tripla/mascara-3.jpg",
+      "projects/mascara-tripla/mascara-4.jpg",
+      "projects/mascara-tripla/mascara-5.jpg"
+    ]
+  },
+  {
+    "title": "Divisor de Ventilador",
+    "slug": "divisor",
+    "category": "Dispositivos",
+    "categoryType": "dispositivos",
+    "images": ["projects/divisor-ventilador/divisor.jpg"]
+  },
+  {
+    "title": "Trion Clip Shield",
+    "slug": "trion",
+    "category": "EPI",
+    "categoryType": "epis",
+    "images": ["projects/trion/trion.jpg"]
+  },
+  {
+    "title": "Máscara",
+    "slug": "mascara",
+    "category": "EPI",
+    "categoryType": "epis",
+    "images": ["projects/mascara/mascara.jpg"]
+  },
+  {
+    "title": "Open Ventilator Spartan",
+    "slug": "open-ventilador",
+    "category": "Dispositivos",
+    "categoryType": "dispositivos",
+    "images": ["projects/spartan/spartan.jpg"]
+  },
+  {
+    "title": "Open Lung",
+    "slug": "open-lung",
+    "category": "Dispositivos",
+    "categoryType": "dispositivos",
+    "images": ["projects/openlung/openlung.jpg"]
+  },
+  {
+    "title": "Valvula PEEP",
+    "slug": "valvula",
+    "category": "Manutenção",
+    "categoryType": "manutencao",
+    "images": ["projects/valvula/valvula.jpg"]
+  }
+]

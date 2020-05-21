@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 
 import Center from '@components/Center'
 
+import projects from '@content/projects'
+
 import categories from './categories'
-import projects from './projects'
 
 import {
   Container,
@@ -66,6 +67,7 @@ const Projetcs = () => {
               images={project.images}
               title={project.title}
               category={project.category}
+              slug={project.slug}
               open={activeProject === index}
               setOpen={e => setOpenProject(e, index)}
               setClose={setCloseProject}
