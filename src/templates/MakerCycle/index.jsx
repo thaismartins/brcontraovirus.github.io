@@ -58,26 +58,19 @@ const MakerCycle = () => {
             </TextWrapper>
 
             <Equipaments>
-              <Equipament>
-                <EquipamentIcon>
-                  <Image src='icons/bed.png' alt='Ícone' />
-                </EquipamentIcon>
-                <EquipamentTitle>Suportes ventilatórios</EquipamentTitle>
-                <EquipamentText>
-                  O exemplo de outros países demonstra o alto risco de
-                  sobrecarga dos hospitais.
-                </EquipamentText>
-              </Equipament>
-              <Equipament>
-                <EquipamentIcon>
-                  <Image src='icons/specialist.png' alt='Ícone' />
-                </EquipamentIcon>
-                <EquipamentTitle>EPIs</EquipamentTitle>
-                <EquipamentText>
-                  Garantir a segurança e presença dos profissionais de saúde é
-                  fundamental nesse momento.
-                </EquipamentText>
-              </Equipament>
+              <Equipament
+                icon='icons/bed.png'
+                title='Suportes ventilatórios'
+                text='O exemplo de outros países demonstra o alto risco de
+                  sobrecarga dos hospitais.'
+              />
+
+              <Equipament
+                icon='icons/specialist.png'
+                title='EPIs'
+                text='Garantir a segurança e presença dos profissionais de saúde é
+                  fundamental nesse momento.'
+              />
             </Equipaments>
           </Content>
         </Center>

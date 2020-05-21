@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import media from '@layouts/media'
 
+import IconText from '@components/IconText'
+
 const Container = styled.div`
   width: 100%;
   color: ${({ theme }) => theme.colors.white};
@@ -86,74 +88,12 @@ const Equipaments = styled.div`
   }
 `
 
-const Equipament = styled.div`
+const Equipament = styled(IconText)`
   flex-basis: 48%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: relative;
-  min-height: 12rem;
-  padding-left: 4rem;
   margin-top: 4rem;
 
   @media ${media.max.medium} {
-    padding-left: 0;
     margin-top: 2rem;
-  }
-`
-
-const EquipamentIcon = styled.div`
-  width: 8rem;
-  height: 8rem;
-  background-color: ${({ theme }) => theme.colors.white};
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-
-  @media ${media.max.medium} {
-    position: relative;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .gatsby-image-wrapper {
-    width: 70%;
-    height: 70%;
-  }
-`
-
-const EquipamentTitle = styled.div`
-  font-size: 2rem;
-  font-weight: 700;
-  padding-left: 6rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 0.15rem solid ${({ theme }) => theme.colors.white};
-  width: 100%;
-
-  @media ${media.max.medium} {
-    padding-left: 0;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    text-align: center;
-  }
-`
-
-const EquipamentText = styled.div`
-  padding-left: 6rem;
-  width: 100%;
-  font-size: 1.125rem;
-
-  @media ${media.max.medium} {
-    padding-left: 0;
-    font-size: 1rem;
   }
 `
 
@@ -167,7 +107,4 @@ export {
   Items,
   Equipaments,
   Equipament,
-  EquipamentIcon,
-  EquipamentTitle,
-  EquipamentText,
 }
