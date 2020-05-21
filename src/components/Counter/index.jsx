@@ -22,7 +22,7 @@ const Counter = ({ number, description, icon, color }) => {
     const additional = total / 6000000000000
 
     const inv = setInterval(() => {
-      if (counter < total) {
+      if (numberRef.current && counter < total) {
         numberRef.current.innerHTML = counter
         counter += 1
       } else clearInterval(inv)
