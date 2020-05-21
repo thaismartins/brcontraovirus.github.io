@@ -99,10 +99,6 @@ const Container = styled.div`
       `};
     }
   }
-
-  @media ${media.max.medium} {
-    margin-bottom: 1rem;
-  }
 `
 
 export { Container }

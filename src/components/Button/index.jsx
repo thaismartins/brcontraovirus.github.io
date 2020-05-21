@@ -18,31 +18,38 @@ const Button = ({
   blank,
   className,
   onClick,
-}) => (
-  <Container
-    link={link}
-    color={color}
-    rounded={rounded}
-    circle={circle}
-    uppercase={uppercase}
-    center={center}
-    className={className}
-  >
-    {onClick && to === '' && (
-      <button type='button' onClick={onClick}>
-        {children}
-      </button>
-    )}
+}) => {
+  const isAnchor = to !== '' && to.startsWith('#')
+  const isLink = to !== '' && !isAnchor
 
-    {blank && to !== '' && (
-      <Link href={to} blank>
-        {children}
-      </Link>
-    )}
+  return (
+    <Container
+      link={link}
+      color={color}
+      rounded={rounded}
+      circle={circle}
+      uppercase={uppercase}
+      center={center}
+      className={className}
+    >
+      {isAnchor && <Link to={to}>{children}</Link>}
 
-    {!blank && to !== '' && <GatsbyLink to={to}>{children}</GatsbyLink>}
-  </Container>
-)
+      {onClick && !isAnchor && !isLink && (
+        <button type='button' onClick={onClick}>
+          {children}
+        </button>
+      )}
+
+      {blank && isLink && (
+        <Link to={to} blank>
+          {children}
+        </Link>
+      )}
+
+      {!blank && isLink && <GatsbyLink to={to}>{children}</GatsbyLink>}
+    </Container>
+  )
+}
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
