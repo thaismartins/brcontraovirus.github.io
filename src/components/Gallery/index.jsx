@@ -12,9 +12,8 @@ const Gallery = ({ open, setClose, images, title }) => (
     <Wrapper open={open}>
       <Carousel color='white' arrows full>
         {images.map((image, index) => (
-          <ImageWrapper>
+          <ImageWrapper key={index}>
             <Image
-              key={index}
               src={image}
               alt={title}
               fit='contain'
