@@ -21,6 +21,7 @@ const Project = ({
   images,
   title,
   category,
+  slug,
   show,
   color,
   className,
@@ -36,10 +37,10 @@ const Project = ({
 
           <ButtonsWrapper color={color}>
             <Buttons>
-              <Button color='whiteYellow' onClick={setOpen} circle>
+              <Button color='whiteYellow' onClick={setOpen} circle center>
                 <PlusButton />
               </Button>
-              <Button color='whiteYellow' circle to='/'>
+              <Button color='whiteYellow' circle to={`/${slug}`} center>
                 <LinkButton />
               </Button>
             </Buttons>
@@ -61,6 +62,7 @@ Project.propTypes = {
   images: PropTypes.arrayOf(PropTypes.string).isRequired,
   title: PropTypes.string.isRequired,
   category: PropTypes.string.isRequired,
+  slug: PropTypes.string.isRequired,
   setOpen: PropTypes.func.isRequired,
   setClose: PropTypes.func.isRequired,
   color: PropTypes.string,
