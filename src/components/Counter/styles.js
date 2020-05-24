@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import media from '@layouts/media'
 
+const images = require.context('@images/icons', true)
+
 const Container = styled.div`
   width: 100%;
   display: flex;
@@ -13,7 +15,7 @@ const Container = styled.div`
   }
 `
 
-const Icon = styled.div`
+const Border = styled.div`
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
@@ -22,7 +24,6 @@ const Icon = styled.div`
   align-items: center;
   margin: 1rem;
   position: relative;
-  background-color: ${({ theme }) => theme.colors.white};
   background-image: ${({ theme, color }) => theme.colors.gradients[color]};
   background-origin: border-box;
   background-clip: padding-box, border-box;
@@ -33,13 +34,28 @@ const Icon = styled.div`
     height: 6rem;
     padding: 0.2rem;
   }
+`
 
-  .gatsby-image-wrapper {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: ${({ theme }) => theme.colors.white};
-  }
+const IconWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: ${({ theme }) => theme.colors.white};
+`
+
+const Icon = styled.div`
+  width: 70%;
+  height: 70%;
+  mask-image: url(${({ image }) => images(`./${image}`)});
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background: ${({ theme, color }) => theme.colors.gradients[color]};
+  transition: ${({ theme }) => theme.transition};
 `
 
 const Number = styled.p`
@@ -73,4 +89,4 @@ const Description = styled.p`
   }
 `
 
-export { Container, Icon, Number, Description }
+export { Container, Border, IconWrapper, Icon, Number, Description }

@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import media from '@layouts/media'
 
+const images = require.context('@images/icons', true)
+
 const Container = styled.div`
   width: 100%;
   display: flex;
@@ -18,7 +20,7 @@ const Container = styled.div`
   }
 `
 
-const Icon = styled.div`
+const IconWrapper = styled.div`
   width: 8rem;
   height: 8rem;
   background-color: ${({ theme }) => theme.colors.white};
@@ -32,6 +34,7 @@ const Icon = styled.div`
   bottom: 0;
   right: ${({ rtl }) => (rtl ? '0' : 'auto')};
   left: ${({ rtl }) => (rtl ? 'auto' : '0')};
+  z-index: 1;
 
   @media ${media.max.medium} {
     position: relative;
@@ -42,11 +45,16 @@ const Icon = styled.div`
     width: 6rem;
     height: 6rem;
   }
+`
 
-  .gatsby-image-wrapper {
-    width: 70%;
-    height: 70%;
-  }
+const Icon = styled.div`
+  width: 60%;
+  height: 60%;
+  mask-image: url(${({ image }) => images(`./${image}`)});
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background: ${({ theme, color }) => theme.colors.gradients[color]};
 `
 
 const Title = styled.div`
@@ -112,4 +120,4 @@ const Text = styled.div`
   }
 `
 
-export { Container, Icon, Title, Text }
+export { Container, IconWrapper, Icon, Title, Text }

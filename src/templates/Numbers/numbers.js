@@ -7,7 +7,7 @@ const numbers = [
   {
     number: 1600,
     description: 'Voluntários Cadastrados',
-    icon: 'bag.png',
+    icon: 'hand.png',
   },
   {
     number: 700,

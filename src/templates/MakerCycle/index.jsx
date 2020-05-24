@@ -59,14 +59,16 @@ const MakerCycle = () => {
 
             <Equipaments>
               <Equipament
-                icon='icons/bed.png'
+                icon='bed.png'
                 title='Suportes ventilatórios'
+                color='pink'
                 text='O exemplo de outros países demonstra o alto risco de
                   sobrecarga dos hospitais.'
               />
 
               <Equipament
-                icon='icons/specialist.png'
+                icon='specialist.png'
+                color='pink'
                 title='EPIs'
                 text='Garantir a segurança e presença dos profissionais de saúde é
                   fundamental nesse momento.'

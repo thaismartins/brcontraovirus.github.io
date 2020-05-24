@@ -1,15 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Image from '@components/Image'
-
-import { Container, Icon, Title, Text } from './styles'
+import { Container, IconWrapper, Icon, Title, Text } from './styles'
 
 const IconText = ({ icon, title, text, color, rtl, gradient, className }) => (
   <Container color={color} rtl={rtl} className={className}>
-    <Icon rtl={rtl}>
-      <Image src={icon} alt={title} />
-    </Icon>
+    <IconWrapper rtl={rtl}>
+      <Icon image={icon} color={color} />
+    </IconWrapper>
     <Title rtl={rtl} gradient={gradient}>
       {title}
     </Title>
