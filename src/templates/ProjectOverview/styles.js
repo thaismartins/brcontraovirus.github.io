@@ -119,11 +119,14 @@ const Infos = styled.div`
   border-top-left-radius: 3rem;
   background: ${({ theme }) => theme.colors.white};
   min-height: 20rem;
+  display: flex;
+  flex-wrap: wrap;
 
   @media ${media.max.medium} {
     width: 100%;
     box-shadow: none;
     padding: 2rem 1rem 0;
+    flex-direction: column;
   }
 `
 
@@ -137,16 +140,21 @@ const Text = styled.p`
 
 const Buttons = styled.div`
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-self: flex-end;
 
   > div {
-    margin-bottom: 1rem;
     margin-right: 1rem;
+
+    @media ${media.max.medium} {
+      margin-bottom: 1rem;
+      margin-right: 0;
+    }
   }
 
   @media ${media.max.medium} {
-    justify-content: space-between;
     flex-direction: column;
     align-items: center;
   }

@@ -38,7 +38,7 @@ const ProjectOverview = ({
               <Image
                 src={image}
                 alt={title}
-                fit='contain'
+                fit='cover'
                 style={{
                   margin: 'auto',
                   right: 0,
