@@ -8,6 +8,7 @@ import SEO from '@components/SEO'
 import Banner from '@templates/Banner'
 import ProjectOverview from '@templates/ProjectOverview'
 import ProjectDetails from '@templates/ProjectDetails'
+import Donate from '@templates/Donate'
 
 const ProjectsPage = ({ pageContext }) => {
   const {
@@ -25,7 +26,8 @@ const ProjectsPage = ({ pageContext }) => {
   return (
     <Layout>
       <SEO title={title} />
-      <Banner />
+
+      <Banner image='banner-projects.jpg' buttons={false} />
 
       <ProjectOverview
         title={title}
@@ -38,6 +40,8 @@ const ProjectsPage = ({ pageContext }) => {
       />
 
       <ProjectDetails details={details} procedures={procedures} />
+
+      <Donate />
     </Layout>
   )
 }
