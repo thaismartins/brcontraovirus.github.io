@@ -23,7 +23,13 @@ const Banner = ({ image, full, buttons }) => {
                 <Button color='whiteGreen' rounded uppercase to='/#faca-parte'>
                   Faça Parte
                 </Button>
-                <Button color='whiteGreen' rounded uppercase to='/'>
+                <Button
+                  color='whiteGreen'
+                  rounded
+                  uppercase
+                  blank
+                  to='https://sharity.com.br/brasil-contra-o-virus---epis-para-os-hospitais--maio?u=ca11b8567b8c11eabd100a536da30ee4'
+                >
                   Vaquinha
                 </Button>
               </Buttons>

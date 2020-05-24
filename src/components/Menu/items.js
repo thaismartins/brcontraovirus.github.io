@@ -42,7 +42,7 @@ const items = [
   {
     title: 'Vakinha',
     link:
-      'https://sharity.com.br/brasil-contra-o-virus-em-sp---epis-para-os-hospitais?u=ca11b8567b8c11eabd100a536da30ee4sobre',
+      'https://sharity.com.br/brasil-contra-o-virus---epis-para-os-hospitais--maio?u=ca11b8567b8c11eabd100a536da30ee4',
     external: true,
   },
   {

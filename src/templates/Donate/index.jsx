@@ -16,7 +16,12 @@ const Donate = () => {
         </Text>
 
         <Buttons>
-          <Button color='green' rounded to='/#faca-parte'>
+          <Button
+            color='green'
+            to='https://sharity.com.br/brasil-contra-o-virus---epis-para-os-hospitais--maio?u=ca11b8567b8c11eabd100a536da30ee4'
+            blank
+            rounded
+          >
             Doe para uma Vaquinha
           </Button>
           <Button color='green' rounded to='/#faca-parte'>
