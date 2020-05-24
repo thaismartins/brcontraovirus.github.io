@@ -41,6 +41,7 @@ const ProjectDetails = ({ details, procedures }) => {
                   title={procedure.title}
                   text={procedure.text}
                   rtl={index % 2 === 0}
+                  color='purple'
                   gradient
                 />
               ))}
@@ -64,6 +65,7 @@ const ProjectDetails = ({ details, procedures }) => {
                   title={procedure.title}
                   text={procedure.text}
                   rtl={index % 2 === 0}
+                  color='purple'
                   gradient
                 />
               ))}
