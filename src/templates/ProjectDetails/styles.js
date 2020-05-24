@@ -24,8 +24,8 @@ const Title = styled.h2`
   }
 `
 
-const Text = styled.p`
-  line-height: 2rem;
+const Text = styled.div`
+  line-height: 1.5rem;
   font-size: 1.125rem;
   width: 80%;
   margin: auto;
@@ -34,6 +34,14 @@ const Text = styled.p`
     font-size: 1rem;
     line-height: 1.5rem;
     width: 100%;
+  }
+
+  p {
+    margin-bottom: 2rem;
+
+    @media ${media.max.medium} {
+      margin-bottom: 1rem;
+    }
   }
 
   a {
