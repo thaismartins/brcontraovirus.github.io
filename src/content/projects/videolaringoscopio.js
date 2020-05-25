@@ -22,19 +22,19 @@ const makers = [
 const hospitals = [
   {
     title: 'Antes de TUDO',
-    icon: 'icons/bed.png',
+    icon: 'shield.png',
     text:
       'Desembale o kit e limpe em processo de autoclave à 120 °C, també pode ser higienizado com Solução Hipoclorito/Cloxedina.',
   },
   {
     title: 'Reutilização',
-    icon: 'icons/bed.png',
+    icon: 'plus.png',
     text:
       'O dispositivo deve ser obrigatóriamente higienizado. Pode-se utilizar autoclave ou Solução Hipoclorito/Cloxedina.',
   },
   {
     title: 'Atenção',
-    icon: 'icons/bed.png',
+    icon: 'attention.png',
     text:
       'Este equipamento destina-se exclusivamente para uso emergencial, podendo sofrer alterações durante a pandemia de COVID-19.',
   },
