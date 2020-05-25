@@ -1,26 +1,3 @@
-// import React from 'react'
-// import PropTypes from 'prop-types'
-
-// import { Container } from './styles'
-
-// const Image = ({ src, alt, cover }) => (
-//   <Container cover={cover}>
-//     <img src={src} alt={alt} title={alt} />
-//   </Container>
-// )
-
-// Image.propTypes = {
-//   src: PropTypes.string.isRequired,
-//   alt: PropTypes.string.isRequired,
-//   cover: PropTypes.bool,
-// }
-
-// Image.defaultProps = {
-//   cover: false,
-// }
-
-// export default Image
-
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
@@ -64,7 +41,7 @@ const Image = ({ src, alt, fit, style }) => (
       const { childImageSharp, extension, publicURL } = image.node
 
       // svg support
-      if (!childImageSharp && extension === 'svg') {
+      if (extension === 'svg') {
         return <img src={publicURL} alt={alt} />
       }
 
@@ -77,7 +54,13 @@ Image.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   fit: PropTypes.oneOf(['contain', 'cover']),
-  style: PropTypes.object,
+  style: PropTypes.shape({
+    width: PropTypes.string,
+    height: PropTypes.string,
+    bottom: PropTypes.number,
+    right: PropTypes.number,
+    margin: PropTypes.string,
+  }),
 }
 
 Image.defaultProps = {

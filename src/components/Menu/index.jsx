@@ -14,6 +14,8 @@ const Menu = ({ open, setOpen }) => {
     e.preventDefault()
     setOpen(false)
 
+    const window = global.window || {}
+
     if (item.external) {
       window.open(item.link, '_blank').focus()
       return

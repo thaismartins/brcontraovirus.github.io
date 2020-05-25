@@ -14,7 +14,10 @@ const PrevArrow = ({ className, style, onClick, color }) => (
 
 PrevArrow.propTypes = {
   className: PropTypes.string,
-  style: PropTypes.object,
+  style: PropTypes.shape({
+    width: PropTypes.string,
+    height: PropTypes.string,
+  }),
   onClick: PropTypes.func,
   color: PropTypes.string,
 }

@@ -11,7 +11,8 @@ const Donate = () => {
         <Title>Você pode salvar uma vida</Title>
         <Text>
           A sua doação é de extrema valia para os hospitais e instituições que
-          nosso projeto auxilia. <br />
+          nosso projeto auxilia.
+          <br />
           Ajude-nos a equipá-los para salvarmos as pessoas!
         </Text>
 

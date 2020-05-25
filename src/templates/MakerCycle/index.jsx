@@ -15,9 +15,6 @@ import {
   Items,
   Equipaments,
   Equipament,
-  EquipamentIcon,
-  EquipamentTitle,
-  EquipamentText,
 } from './styles'
 
 const items = [
