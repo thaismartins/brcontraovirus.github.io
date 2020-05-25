@@ -16,7 +16,7 @@ Rede colaborativa de combate ao COVID-19 no Brasil
     1. [NPM](https://www.npmjs.com/get-npm)
     2. [YARN](https://yarnpkg.com/getting-started/install)
 
-    **Nota**: Caso tenha algum problema, consulte a sessão [Soluções de Erros](#errors)
+    **Nota**: Caso tenha algum problema, consulte a sessão [Soluções de Erros](#Soluções-de-Erros)
 
 2.  **Instale as dependências do projeto**
     ```shell
@@ -117,7 +117,7 @@ O processo de deploy pode ser feito de duas maneiras:
 
    2. Copiar a pasta `public` gerada para o servidor
 
-## 💫 Soluções de Erros {#errors}
+## 🌡 Soluções de Erros
 
 1. Erro de versão do NodeJs
 
