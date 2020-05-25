@@ -16,21 +16,11 @@ Rede colaborativa de combate ao COVID-19 no Brasil
     1. [NPM](https://www.npmjs.com/get-npm)
     2. [YARN](https://yarnpkg.com/getting-started/install)
 
-
-*** :beetle: Deu erro, jão?
-  yarn install v1.22.4
-  [1/4] Resolving packages...
-  [2/4] Fetching packages...
-  error @typescript-eslint/eslint-plugin@2.28.0: The engine "node" is incompatible with this module. Expected version "^8.10.0 || ^10.13.0 || >=11.10.1". Got "11.2.0"
-  error Found incompatible module.
-
-**** a) Atualize o node-js.
-**** b) Usa Ubuntu LTS e/ou está com preguiça?
-  yarn install --ignore-engines
+    **Nota**: Caso tenha algum problema, consulte a sessão [Soluções de Erros](#errors)
 
 2.  **Instale as dependências do projeto**
     ```shell
-    yarn install
+    yarn
     ```
 
 ## 🚀 Como começar
@@ -44,6 +34,12 @@ Rede colaborativa de combate ao COVID-19 no Brasil
 2. **Agora só abrir o código e começar a editar!**
 
    O projeto estará rodando em `http://localhost:3000`!
+
+## 🚀 Como validar
+
+```shell
+yarn run lint
+```
 
 ## 🧐 O que temos no projeto?
 
@@ -109,7 +105,7 @@ Um resumo da estrutura do projeto.
 
 O processo de deploy pode ser feito de duas maneiras:
 
-1. **Deploy automatizado** utilizando os plugins do GatsbyJs. Consulte a [documentação](https://www.gatsbyjs.org/docs/deploying-and-hosting/).
+1. **Deploy automatizado** sendo feito através do circleci.
 
 2. **Deploy manual** seguindo os passos:
 
@@ -120,3 +116,23 @@ O processo de deploy pode ser feito de duas maneiras:
    ```
 
    2. Copiar a pasta `public` gerada para o servidor
+
+## 💫 Soluções de Erros {#errors}
+
+1. Erro de versão do NodeJs
+
+```SHELL
+  yarn install v1.22.4
+  [1/4] Resolving packages...
+  [2/4] Fetching packages...
+  error @typescript-eslint/eslint-plugin@2.28.0: The engine "node" is incompatible with this module. Expected version "^8.10.0 || ^10.13.0 || >=11.10.1". Got "11.2.0"
+  error Found incompatible module.
+```
+
+1.  Atualize a versão do [NodeJs](https://nodejs.org/en/download/)
+
+2.  Caso use Ubuntu LTS e/ou está com preguiça?
+
+```SHELL
+  yarn install --ignore-engines
+```
