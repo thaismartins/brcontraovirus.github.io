@@ -56,7 +56,7 @@ jobs:
           command: |
             sudo apt-get -y -qq install awscli
             CI=false yarn run build:ci
-            aws s3 sync public/ s3://gatsby-ci-demo  --region sa-east-1 --delete
+            aws s3 sync public/ s3://${BUCKET_NAME} --region ${AWS_REGION} --delete
 
 workflows:
   version: 2
