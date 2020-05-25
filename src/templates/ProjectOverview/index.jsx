@@ -32,22 +32,24 @@ const ProjectOverview = ({
       <Center>
         <Title>{title}</Title>
 
-        <Carousel color='orange' arrows dots full>
-          {images.map((image, index) => (
-            <ImageWrapper key={index}>
-              <Image
-                src={image}
-                alt={title}
-                fit='cover'
-                style={{
-                  margin: 'auto',
-                  right: 0,
-                  bottom: 0,
-                }}
-              />
-            </ImageWrapper>
-          ))}
-        </Carousel>
+        {images && (
+          <Carousel color='orange' arrows dots full>
+            {images.map((image, index) => (
+              <ImageWrapper key={index}>
+                <Image
+                  src={image}
+                  alt={title}
+                  fit='cover'
+                  style={{
+                    margin: 'auto',
+                    right: 0,
+                    bottom: 0,
+                  }}
+                />
+              </ImageWrapper>
+            ))}
+          </Carousel>
+        )}
 
         <Details>
           <DetailsWrapper>
