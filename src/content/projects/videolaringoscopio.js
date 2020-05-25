@@ -41,7 +41,7 @@ const hospitals = [
 ]
 
 module.exports = {
-  title: 'Videolaringoscopio',
+  title: 'Videolaringoscópio',
   slug: 'videolaringoscopio',
   category: 'Manutenção',
   categoryType: 'manutencao',
