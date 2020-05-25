@@ -46,7 +46,7 @@ const hospitals = [
   },
   {
     title: 'Atenção',
-    icon: 'attention',
+    icon: 'attention.png',
     text:
       'Este equipamento destina-se exclusivamente para uso emergencial, podendo sofrer alterações durante a pandemia de COVID-19.',
   },
