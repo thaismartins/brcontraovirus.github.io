@@ -52,10 +52,11 @@ const Projects = styled.div`
 `
 
 const Project = styled(ProjectComponent)`
-  margin: 0.5rem;
-  flex-basis: calc(33.33333% - 1rem);
+  margin: 1rem;
+  flex-basis: calc(33.33333% - 2rem);
 
   @media ${media.max.medium} {
+    margin: 0.5rem;
     flex-basis: calc(50% - 1rem);
   }
 

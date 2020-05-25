@@ -7,7 +7,6 @@ import Link from '@components/Link'
 
 const Container = styled.footer`
   width: 100%;
-  margin-top: 2rem;
   padding: 4rem 0;
   background: linear-gradient(20deg, #f1f1f1, #ebebeb);
   display: flex;

@@ -5,6 +5,11 @@ const hospitals = [
     total: 400,
   },
   {
+    title: 'HOSPITAL INFANTIL DARCY VARGAS',
+    units: 400,
+    total: 600,
+  },
+  {
     title: 'SAMU PMSP',
     units: 175,
     total: 400,

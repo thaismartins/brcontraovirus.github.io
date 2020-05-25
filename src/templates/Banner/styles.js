@@ -7,6 +7,11 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+  min-height: 16rem;
+
+  @media ${media.max.medium} {
+    min-height: 10rem;
+  }
 `
 
 const Content = styled.div`

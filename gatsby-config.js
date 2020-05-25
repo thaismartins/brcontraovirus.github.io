@@ -50,6 +50,7 @@ module.exports = {
           '@templates': path.resolve(__dirname, 'src/templates'),
           '@services': path.resolve(__dirname, 'src/services'),
           '@components': path.resolve(__dirname, 'src/components'),
+          '@content': path.resolve(__dirname, 'src/content'),
         },
         extensions: ['.js', '.jsx'],
       },

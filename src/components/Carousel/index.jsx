@@ -16,6 +16,7 @@ const Carousel = ({
   slidesToScroll,
   color,
   full,
+  className,
 }) => {
   let configs = {
     ...settings.standard,
@@ -35,7 +36,7 @@ const Carousel = ({
   }
 
   return (
-    <Container color={color} arrows={arrows}>
+    <Container color={color} arrows={arrows} className={className}>
       <Slider {...configs}>{children}</Slider>
     </Container>
   )
@@ -49,6 +50,7 @@ Carousel.propTypes = {
   dots: PropTypes.bool,
   arrows: PropTypes.bool,
   full: PropTypes.bool,
+  className: PropTypes.string,
 }
 
 Carousel.defaultProps = {
@@ -58,6 +60,7 @@ Carousel.defaultProps = {
   dots: false,
   arrows: false,
   full: false,
+  className: '',
 }
 
 export default Carousel

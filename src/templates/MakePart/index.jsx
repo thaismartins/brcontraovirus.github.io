@@ -2,7 +2,6 @@ import React from 'react'
 
 import Background from '@components/Background'
 import Center from '@components/Center'
-import Image from '@components/Image'
 
 import {
   Container,
@@ -14,19 +13,13 @@ import {
   List,
   Item,
   Name,
+  IconWrapper,
+  Icon,
   Buttons,
   Button,
 } from './styles'
 
 import networks from './networks'
-
-const style = {
-  width: '70%',
-  height: '70%',
-  bottom: 0,
-  right: 0,
-  margin: 'auto',
-}
 
 const MakePart = () => {
   return (
@@ -51,11 +44,9 @@ const MakePart = () => {
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    <Image
-                      src={`icons/${institution.icon}`}
-                      alt={institution.title}
-                      style={style}
-                    />
+                    <IconWrapper>
+                      <Icon image={institution.icon} />
+                    </IconWrapper>
                     <Name>{institution.title}</Name>
                   </Item>
                 ))}
@@ -83,11 +74,9 @@ const MakePart = () => {
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    <Image
-                      src={`icons/${volunteer.icon}`}
-                      alt={volunteer.title}
-                      style={style}
-                    />
+                    <IconWrapper>
+                      <Icon image={volunteer.icon} />
+                    </IconWrapper>
                     <Name>{volunteer.title}</Name>
                   </Item>
                 ))}

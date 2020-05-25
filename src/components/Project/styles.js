@@ -65,27 +65,35 @@ const Buttons = styled.div`
   z-index: 1;
 `
 
-const PlusButton = styled.span`
+const DefaultButton = styled.span`
   width: 1.5rem;
   height: 1.5rem;
-  mask-image: url(${PlusIcon});
   mask-repeat: no-repeat;
   mask-size: contain;
   mask-position: center;
-  background: ${({ theme }) => theme.colors.gradients.orange};
+  background-image: ${({ theme }) => theme.colors.gradients.orange};
+  display: inline-flex;
 `
 
-const LinkButton = styled.span`
-  width: 1.5rem;
-  height: 1.5rem;
+const PlusButton = styled(DefaultButton)`
+  mask-image: url(${PlusIcon});
+`
+
+const LinkButton = styled(DefaultButton)`
   mask-image: url(${LinkIcon});
-  mask-repeat: no-repeat;
-  mask-size: contain;
-  mask-position: center;
-  background: ${({ theme }) => theme.colors.gradients.orange};
 `
 
 const Button = styled(ButtonComponent)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   &:hover {
     ${LinkButton},
     ${PlusButton} {

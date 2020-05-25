@@ -43,7 +43,7 @@ const Item = styled.div`
   }
 `
 
-const Link = styled.span`
+const Link = styled.a`
   color: ${({ theme }) => theme.colors.white};
   cursor: pointer;
   transition: ${({ theme }) => theme.transition};

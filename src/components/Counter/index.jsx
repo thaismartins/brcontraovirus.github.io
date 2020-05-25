@@ -1,17 +1,14 @@
 import React, { useEffect, useRef } from 'react'
 import PropTypes from 'prop-types'
 
-import Image from '@components/Image'
-
-import { Container, Icon, Number, Description } from './styles'
-
-const style = {
-  width: '80%',
-  height: '80%',
-  bottom: 0,
-  right: 0,
-  margin: 'auto',
-}
+import {
+  Container,
+  Border,
+  IconWrapper,
+  Icon,
+  Number,
+  Description,
+} from './styles'
 
 const Counter = ({ number, description, icon, color }) => {
   const numberRef = useRef(null)
@@ -22,7 +19,7 @@ const Counter = ({ number, description, icon, color }) => {
     const additional = total / 6000000000000
 
     const inv = setInterval(() => {
-      if (counter < total) {
+      if (numberRef.current && counter < total) {
         numberRef.current.innerHTML = counter
         counter += 1
       } else clearInterval(inv)
@@ -31,9 +28,11 @@ const Counter = ({ number, description, icon, color }) => {
 
   return (
     <Container>
-      <Icon color={color}>
-        <Image src={`icons/${icon}`} alt={description} style={style} />
-      </Icon>
+      <Border color={color}>
+        <IconWrapper>
+          <Icon image={icon} color={color} />
+        </IconWrapper>
+      </Border>
       <Number color={color} ref={numberRef} />
       <Description>{description}</Description>
     </Container>

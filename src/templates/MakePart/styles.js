@@ -3,6 +3,8 @@ import media from '@layouts/media'
 
 import ButtonComponent from '@components/Button'
 
+const images = require.context('@images/icons', true)
+
 const Container = styled.div`
   width: 100%;
   color: ${({ theme }) => theme.colors.white};
@@ -96,6 +98,27 @@ const Name = styled.p`
   }
 `
 
+const IconWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  background-color: ${({ theme }) => theme.colors.white};
+  border-radius: 50%;
+`
+
+const Icon = styled.div`
+  width: 70%;
+  height: 70%;
+  mask-image: url(${({ image }) => images(`./${image}`)});
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+  background: ${({ theme }) => theme.colors.gradients.green};
+  transition: ${({ theme }) => theme.transition};
+`
+
 const Item = styled.a`
   display: flex;
   align-items: center;
@@ -109,20 +132,9 @@ const Item = styled.a`
     padding: 0.5rem;
   }
 
-  .gatsby-image-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 6rem;
-    height: 6rem;
-    background-color: ${({ theme }) => theme.colors.white};
-    border-radius: 50%;
-    transition: ${({ theme }) => theme.transition};
-  }
-
   &:hover {
-    .gatsby-image-wrapper {
-      filter: brightness(1.2);
+    ${Icon} {
+      background: ${({ theme }) => theme.colors.gradients.yellow};
     }
 
     ${Name} {
@@ -168,6 +180,8 @@ export {
   List,
   Item,
   Name,
+  IconWrapper,
+  Icon,
   Buttons,
   Button,
 }
