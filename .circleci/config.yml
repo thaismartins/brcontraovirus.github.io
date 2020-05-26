@@ -63,17 +63,9 @@ workflows:
   front-backend:
     jobs:
       - build
-          filters:
-            branches:
-              only:
-                - feature/circleci
       - lint:
           requires:
             - build
-          filters:
-            branches:
-              only:
-                - feature/circleci
       - deploy:
           requires:
             - lint
