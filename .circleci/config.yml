@@ -25,8 +25,11 @@ save_package_cache: &save_package_cache
       - node_modules
 
 jobs:
-  pre-build:
+  build:
     <<: *defaults_node
+    branches:
+      only:
+        - feature/circleci
     steps:
       - checkout
       - *restore_package_cache
@@ -40,6 +43,9 @@ jobs:
 
   lint:
     <<: *defaults_node
+    branches:
+      only:
+        - feature/circleci
     steps:
       - checkout
       - attach_workspace: &attach_workspace
@@ -48,6 +54,9 @@ jobs:
 
   deploy:
     <<: *defaults_node
+    branches:
+      only:
+        - feature/circleci
     steps:
       - checkout
       - attach_workspace: &attach_workspace
@@ -62,10 +71,10 @@ workflows:
   version: 2
   front-backend:
     jobs:
-      - pre-build
+      - build
       - lint:
           requires:
-            - pre-build
+            - build
       - deploy:
           requires:
             - lint
