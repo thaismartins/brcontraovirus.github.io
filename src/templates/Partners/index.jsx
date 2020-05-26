@@ -42,9 +42,6 @@ const Partners = () => {
             <Button to='#faca-parte' color={color} rounded uppercase>
               Faça Parte da Lista
             </Button>
-            <Button to='/' color={color} rounded uppercase>
-              Ver Todos
-            </Button>
           </Buttons>
         </Center>
       </PageBlock>

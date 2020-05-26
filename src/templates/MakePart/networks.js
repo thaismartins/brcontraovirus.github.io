@@ -6,11 +6,6 @@ const networks = {
       link:
         'https://docs.google.com/forms/d/12OlBBigbMaTyEXwPIPfjBoi9WQxq43w8QLoPcsZCjVA/viewform?edit_requested=true',
     },
-    {
-      title: 'Outras Instituições',
-      icon: 'institutions.png',
-      link: '/',
-    },
   ],
   volunteers: [
     {
@@ -28,7 +23,8 @@ const networks = {
     {
       title: 'Demais Voluntários',
       icon: 'hand.png',
-      link: '',
+      link:
+        'https://docs.google.com/forms/d/e/1FAIpQLSf0txw59GT1GJ5_key4Ff_pNdA23lRg__C8xFUMwquGmcHiwg/viewform',
     },
   ],
 }
