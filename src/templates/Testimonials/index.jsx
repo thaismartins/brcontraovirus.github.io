@@ -28,10 +28,6 @@ const Testimonials = () => {
               />
             ))}
           </TestimonialsLists>
-
-          <Button to='/' color='whiteOrange' rounded uppercase center>
-            Ver Mais Depoimentos
-          </Button>
         </Center>
       </Background>
     </Container>

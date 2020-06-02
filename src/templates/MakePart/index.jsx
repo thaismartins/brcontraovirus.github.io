@@ -51,12 +51,6 @@ const MakePart = () => {
                   </Item>
                 ))}
               </List>
-
-              <Buttons>
-                <Button color='whiteGreen' rounded uppercase to='/'>
-                  Inscreva-se
-                </Button>
-              </Buttons>
             </Block>
 
             <Block>
@@ -87,7 +81,13 @@ const MakePart = () => {
                   Vaquinha
                 </Button>
 
-                <Button color='whiteGreen' rounded uppercase to='/'>
+                <Button
+                  color='whiteGreen'
+                  rounded
+                  uppercase
+                  blank
+                  to='https://docs.google.com/forms/d/e/1FAIpQLSf0txw59GT1GJ5_key4Ff_pNdA23lRg__C8xFUMwquGmcHiwg/viewform'
+                >
                   Junte-se a Nós
                 </Button>
               </Buttons>

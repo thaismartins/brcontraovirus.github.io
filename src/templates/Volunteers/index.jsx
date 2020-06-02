@@ -46,10 +46,6 @@ const Volunteers = () => {
               </Team>
             ))}
           </Teams>
-
-          <Button to='/' color='purple' uppercase rounded center>
-            Ver toda a equipe
-          </Button>
         </Center>
       </PageBlock>
     </Container>
