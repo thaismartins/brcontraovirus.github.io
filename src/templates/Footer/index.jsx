@@ -25,7 +25,8 @@ const Header = () => {
 
         <Details>
           <Address>
-            Av Pres. Castelo Branco, 6061 <br />
+            Av Pres. Castelo Branco, 6061
+            <br />
             São Paulo, SP
           </Address>
           <Email to='mailto:brcontraovirus@gmail.com'>

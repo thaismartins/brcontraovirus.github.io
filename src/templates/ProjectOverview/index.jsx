@@ -56,25 +56,29 @@ const ProjectOverview = ({
             <Infos>
               {category && (
                 <Text>
-                  <b>Categoria:</b> {category}
+                  <b>Categoria: </b>
+                  {category}
                 </Text>
               )}
 
               {technology && (
                 <Text>
-                  <b>Tecnologia:</b> {technology}
+                  <b>Tecnologia: </b>
+                  {technology}
                 </Text>
               )}
 
               {materials && (
                 <Text>
-                  <b>Materiais:</b> {materials}
+                  <b>Materiais: </b>
+                  {materials}
                 </Text>
               )}
 
               {designers && (
                 <Text>
-                  <b>Projetistas:</b> {designers}
+                  <b>Projetistas: </b>
+                  {designers}
                 </Text>
               )}
 

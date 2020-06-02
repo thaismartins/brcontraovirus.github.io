@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import media from '@layouts/media'
 
 const Container = styled.div`
   width: fit-content;

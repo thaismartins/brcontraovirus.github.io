@@ -13,7 +13,10 @@
     "import/prefer-default-export": "off",
     "import/no-unresolved": "off",
     "import/no-default-export": "off",
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "react/no-array-index-key": "off",
+    "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/anchor-is-valid": "off"
   },
   "settings": {
     "import/extensions": [".js", ".jsx"],

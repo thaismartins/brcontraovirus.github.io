@@ -3,15 +3,17 @@ import PropTypes from 'prop-types'
 
 import { Container, Title, Units, Progress } from './styles'
 
-const ProgressBar = ({ title, units, total, color, unit }) => (
-  <Container>
-    <Title>{title}</Title>
-    <Units>
-      {units} {unit}
-    </Units>
-    <Progress percentage={(units * 100) / total} color={color} />
-  </Container>
-)
+const ProgressBar = ({ title, units, total, color, unit }) => {
+  const value = `${units} ${unit}`
+
+  return (
+    <Container>
+      <Title>{title}</Title>
+      <Units>{value}</Units>
+      <Progress percentage={(units * 100) / total} color={color} />
+    </Container>
+  )
+}
 
 ProgressBar.propTypes = {
   title: PropTypes.string.isRequired,

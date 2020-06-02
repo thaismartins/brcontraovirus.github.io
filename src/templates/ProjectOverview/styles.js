@@ -126,11 +126,11 @@ const Infos = styled.div`
     width: 100%;
     box-shadow: none;
     padding: 2rem 1rem 0;
-    flex-direction: column;
   }
 `
 
 const Text = styled.p`
+  width: 100%;
   margin-bottom: 1.5rem;
 
   &:last-of-type {
