@@ -5,10 +5,12 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@layouts": ["./src/layouts"],
+      "@images": ["./src/images"],
       "@pages": ["./src/pages"],
+      "@layouts": ["./src/layouts"],
       "@templates": ["./src/templates"],
-      "@components": ["./src/components"]
+      "@components": ["./src/components"],
+      "@content": ["./src/content"]
     }
   },
   "include": ["./src/**/*"]

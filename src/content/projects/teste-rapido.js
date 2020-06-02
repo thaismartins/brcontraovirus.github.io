@@ -22,7 +22,7 @@ module.exports = {
   images: ['projects/teste-rapido/teste.png'],
   details,
   downloads: [
-    './public/pdfs/teste-rapido/ficha.pdf',
-    './public/pdfs/teste-rapido/flyer.pdf',
+    '../../static/teste-rapido/ficha.pdf',
+    '../../static/teste-rapido/flyer.pdf',
   ],
 }
