@@ -9,7 +9,7 @@ import ProgressBar from '@components/ProgressBar'
 import volunteers from './volunteers'
 import teams from './teams'
 
-import { Container, Title, Teams, Team, Button } from './styles'
+import { Container, Title, Teams, Team } from './styles'
 
 const Volunteers = () => {
   return (

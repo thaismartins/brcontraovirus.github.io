@@ -6,7 +6,7 @@ import Testimony from '@components/Testimony'
 
 import testimonials from './testimonials'
 
-import { Container, Title, Text, TestimonialsLists, Button } from './styles'
+import { Container, Title, Text, TestimonialsLists } from './styles'
 
 const Testimonials = () => {
   return (
