@@ -72,4 +72,4 @@ workflows:
           filters:
             branches:
               only:
-                - feature/circleci
+                - feature/site-v2
