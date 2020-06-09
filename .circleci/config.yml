@@ -1,0 +1,75 @@
+version: 2.1
+
+#Working directory
+working_directory: &working_directory ~/brcontraovirus.github.io
+
+# Default step config
+defaults_node: &defaults_node
+  docker:
+    - image: circleci/node:10.16.2-browsers
+      environment:
+        JOBS: 2
+  working_directory: *working_directory
+
+#NPM
+restore_package_cache: &restore_package_cache
+  restore_cache:
+    name: Restore NPM Package Cache
+    keys:
+      - dependency-cache-{{ checksum "yarn.lock" }}
+
+save_package_cache: &save_package_cache
+  save_cache:
+    key: dependency-cache-{{ checksum "yarn.lock" }}
+    paths:
+      - node_modules
+
+jobs:
+  build:
+    <<: *defaults_node
+    steps:
+      - checkout
+      - *restore_package_cache
+      - run: yarn
+      - *save_package_cache
+      - persist_to_workspace:
+          root: *working_directory
+          paths:
+            - public
+            - node_modules
+
+  lint:
+    <<: *defaults_node
+    steps:
+      - checkout
+      - attach_workspace: &attach_workspace
+          at: *working_directory
+      - run: yarn lint
+
+  deploy:
+    <<: *defaults_node
+    steps:
+      - checkout
+      - attach_workspace: &attach_workspace
+          at: *working_directory
+      - run:
+          command: |
+            sudo apt-get -y -qq install awscli
+            CI=false yarn run build:ci
+            aws s3 sync public/ s3://${BUCKET_NAME} --region ${AWS_REGION} --delete
+
+workflows:
+  version: 2
+  front-backend:
+    jobs:
+      - build
+      - lint:
+          requires:
+            - build
+      - deploy:
+          requires:
+            - lint
+          filters:
+            branches:
+              only:
+                - feature/site-v2

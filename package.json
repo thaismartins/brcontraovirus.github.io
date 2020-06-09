@@ -55,7 +55,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "lint": "eslint ./src/**/*.{js,jsx,json,md}"
+    "lint": "eslint ./src/**/*.{js,jsx,json,md}",
+    "build:ci": "node_modules/.bin/gatsby build"
   },
   "repository": {
     "type": "git",
